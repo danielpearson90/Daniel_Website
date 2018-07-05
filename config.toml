@@ -6,7 +6,7 @@
 baseurl = "/"
 
 # Title of your site
-title = "Daniel Pearson"
+title = "Daniel Pearson - UNSW Sydney"
 
 # Your copyright notice - appears in site footer.
 # To display a copyright symbol, type `&copy;`.
@@ -48,7 +48,7 @@ enableGitInfo = false
 [params]
   # Color theme.
   #   Choose from `default`, `ocean`, `forest`, `coffee`, `dark`, or `1950s`.
-  color_theme = "default"
+  color_theme = "forest"
 
   # Font style.
   #   Choose from `default`, `classic`, or `playfair`.
@@ -56,20 +56,20 @@ enableGitInfo = false
 
   # Your details.
   name = "Daniel Pearson"
-  role = [{name ="Psychology PhD Student"}, {name="M Psych (Clinical) Student"}, {name="Provisional Psychologist"}]
+  role = [{name ="Psychology PhD Student"}, {name="MPsych (Clinical) Student"}, {name="Provisional Psychologist"}]
 
   # Organizations/Affiliations.
   #   Separate multiple entries with a comma, using the form: `[ {name="Org1", url=""}, {name="Org2", url=""} ]`.
   organizations = [ { name = "UNSW Sydney", url = "" } ]
 
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
-  avatar = "19181287.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
+  avatar = "profilepic1.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
   email = "d.pearson@unsw.edu.au"
   address = "Level 14, Mathews Building, UNSW Sydney, NSW Australia"
-  office_hours = "Monday 10:00 to 13:00 or email for appointment"
-  phone = "888 888 88 88"
-  skype = "echo123"
-  telegram = ""
+  #office_hours = "Monday 10:00 to 13:00 or email for appointment"
+  #phone = "888 888 88 88"
+  #skype = "echo123"
+  #telegram = ""
 
   # Enable Keybase in Contact widget by entering your keybase.io username.
   keybase = ""
@@ -180,13 +180,13 @@ enableGitInfo = false
     'Manuscript',  # 3
     'Report',  # 4
     'Book',  # 5
-    'Book section'  # 6
+    'Book chapter'  # 6
   ]
 
   # Configuration of talk pages.
   [params.talks]
     # Show talk time?
-    time = true
+    time = false
 
   # Configuration of publication pages.
   [params.publications]
@@ -204,7 +204,7 @@ enableGitInfo = false
     #   1 = Detailed
     #   2 = APA
     #   3 = MLA
-    publication_format = 3
+    publication_format = 2
 
   # Social/Academic Networking
   #
@@ -243,6 +243,16 @@ enableGitInfo = false
     icon = "github"
     icon_pack = "fa"
     link = "//github.com/danielpearson90"
+    
+  [[params.social]]
+    icon = "orcid"
+    icon_pack = "ai"
+    link = "https://orcid.org/0000-0003-1903-4019"
+    
+  [[params.social]]
+    icon = "researchgate"
+    icon_pack = "ai"
+    link = "https://www.researchgate.net/profile/Daniel_Pearson2"
 
 
 # Navigation Links
@@ -263,25 +273,35 @@ enableGitInfo = false
   url = "#publications_selected"
   weight = 2
 
-[[menu.main]]
-  name = "Posts"
-  url = "#posts"
-  weight = 3
+#[[menu.main]]
+#  name = "Posts"
+#  url = "#posts"
+#  weight = 3
+
+#[[menu.main]]
+#  name = "Projects"
+#  url = "#projects"
+#  weight = 4
 
 [[menu.main]]
-  name = "Projects"
-  url = "#projects"
-  weight = 4
+  name = "Talks/Posters"
+  url = "#talks"
+  weight = 3
 
 [[menu.main]]
   name = "Teaching"
   url = "#teaching"
-  weight = 5
+  weight = 4
+  
+[[menu.main]]
+  name = "CV"
+  url = "files/Daniel Pearson CV.pdf"
+  weight = 4
 
 [[menu.main]]
   name = "Contact"
   url = "#contact"
-  weight = 6
+  weight = 5
 
 # Taxonomies.
 [taxonomies]

@@ -15,7 +15,11 @@ weight = 60
 
 +++
 
-I have tutored for the following courses at UNSW Sydney:
+__Head Tutor:__
 
-- PSYC2001: Research Methods 2 (2015-2018, Head Tutor role 2017-2018)
-- PSYC2071: Perception & Cognition (2015-2018)
+- PSYC2001: Research Methods 2 _(2017--2018)_
+
+__Tutor:__
+
+- PSYC2001: Research Methods 2 _(2015--2016)_
+- PSYC2071: Perception & Cognition _(2015--2018)_

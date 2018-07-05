@@ -17,7 +17,7 @@ weight = 10
 #   1 = Detailed
 #   2 = APA
 #   3 = MLA
-list_format = 1
+list_format = 2
 
 # Filter by publication type.
 # -1: Any
@@ -31,3 +31,4 @@ list_format = 1
 publication_type = "-1"
 +++
 
+_You may click on the links to access pdf versions of these papers. Your click on any of the links constitutes your request to me for a personal copy of the linked article, and my delivery of a personal copy. Any other use is prohibited. Please email me for copies of anything that’s not available here._

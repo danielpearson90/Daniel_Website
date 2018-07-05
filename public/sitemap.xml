@@ -14,8 +14,8 @@
     
     <url>
     
-      <loc>/tags/academic/</loc>
-      <lastmod>2017-01-01T00:00:00+11:00</lastmod>
+      <loc>/publication/2018-01-01_spatiotemporal_compe/</loc>
+      <lastmod>2018-01-01T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -23,7 +23,142 @@
     
     <url>
     
-      <loc>/talk/example-talk/</loc>
+      <loc>/talk/2014-algxmas-unsw/</loc>
+      <lastmod>2017-05-17T00:00:00+10:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/talk/2018-psychomics-amsterdam-poster/</loc>
+      <lastmod>2017-05-17T00:00:00+10:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/talk/2017-alg-xmas/</loc>
+      <lastmod>2017-05-17T00:00:00+10:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/talk/2016-ecvp-barcelona/</loc>
+      <lastmod>2017-05-17T00:00:00+10:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/talk/2016-psychonomics-boston/</loc>
+      <lastmod>2017-05-17T00:00:00+10:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/talk/2017-psychonomics-vancouver/</loc>
+      <lastmod>2017-05-17T00:00:00+10:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/talk/2016-alg-usyd/</loc>
+      <lastmod>2017-05-17T00:00:00+10:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/talk/2013-algxmas-usyd/</loc>
+      <lastmod>2017-05-17T00:00:00+10:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/talk/2015-gregynog-wales/</loc>
+      <lastmod>2017-05-17T00:00:00+10:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/talk/2015-alg-bluemountains/</loc>
+      <lastmod>2017-05-17T00:00:00+10:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/talk/2017-epc/</loc>
+      <lastmod>2017-04-19T00:00:00+10:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/publication/2017-01-01_miss_it_and_miss_out/</loc>
+      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/publication/2017-01-01_neurophysiological_e/</loc>
+      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/publication/2017-01-01_oculomotor_capture_i/</loc>
+      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/publication/2017-01-01_selective_attention_/</loc>
+      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/tags/academic/</loc>
       <lastmod>2017-01-01T00:00:00+11:00</lastmod>
     </url>
     
@@ -86,8 +221,8 @@
     
     <url>
     
-      <loc>/publication/person-re-identification/</loc>
-      <lastmod>2015-09-01T00:00:00+10:00</lastmod>
+      <loc>/publication/2016-01-01_configural_learning_/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -95,8 +230,8 @@
     
     <url>
     
-      <loc>/publication/clothing-search/</loc>
-      <lastmod>2013-07-01T00:00:00+10:00</lastmod>
+      <loc>/publication/2016-01-01_value-modulated_ocul/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -104,9 +239,53 @@
     
     <url>
     
-      <loc>/publication_types/1/</loc>
-      <lastmod>2013-07-01T00:00:00+10:00</lastmod>
-      <priority>0</priority>
+      <loc>/publication/2015-01-01_cognitive_control_an/</loc>
+      <lastmod>2015-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/publication/2015-01-01_implicit_learning_of/</loc>
+      <lastmod>2015-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/publication/2015-01-01_oculomotor_capture_b/</loc>
+      <lastmod>2015-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/publication/2015-01-01_pre-exposure_of_repe/</loc>
+      <lastmod>2015-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/publication/2015-01-01_uncertainty_and_pred/</loc>
+      <lastmod>2015-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/publication/2015-01-01_when_goals_conflict_/</loc>
+      <lastmod>2015-01-01T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -115,7 +294,7 @@
     <url>
     
       <loc>/publication_types/2/</loc>
-      <lastmod>2015-09-01T00:00:00+10:00</lastmod>
+      <lastmod>2018-01-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -174,7 +353,7 @@
     <url>
     
       <loc>/publication_types/</loc>
-      <lastmod>2013-07-01T00:00:00+10:00</lastmod>
+      <lastmod>2018-01-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     

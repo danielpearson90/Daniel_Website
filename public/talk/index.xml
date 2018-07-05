@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Recent &amp; Upcoming Talks on Daniel Pearson</title>
+    <title>Recent &amp; Upcoming Talks on Daniel Pearson - UNSW Sydney</title>
     <link>/talk/</link>
-    <description>Recent content in Recent &amp; Upcoming Talks on Daniel Pearson</description>
+    <description>Recent content in Recent &amp; Upcoming Talks on Daniel Pearson - UNSW Sydney</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
@@ -13,12 +13,102 @@
     
     
     <item>
-      <title>Example Talk</title>
-      <link>/talk/example-talk/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +1100</pubDate>
+      <title>Don’t look at the red circle: Instrumental, but not volitional, inhibition of value-modulated attentional capture</title>
+      <link>/talk/2014-algxmas-unsw/</link>
+      <pubDate>Wed, 17 May 2017 00:00:00 +1000</pubDate>
       
-      <guid>/talk/example-talk/</guid>
-      <description>Embed your slides or video here using shortcodes. Further details can easily be added using Markdown and $\rm \LaTeX$ math code.</description>
+      <guid>/talk/2014-algxmas-unsw/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Examining the test-retest reliability of reward-modulated attentional biases</title>
+      <link>/talk/2018-psychomics-amsterdam-poster/</link>
+      <pubDate>Wed, 17 May 2017 00:00:00 +1000</pubDate>
+      
+      <guid>/talk/2018-psychomics-amsterdam-poster/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Examining the test-retest reliability of value-modulated attentional capture</title>
+      <link>/talk/2017-alg-xmas/</link>
+      <pubDate>Wed, 17 May 2017 00:00:00 +1000</pubDate>
+      
+      <guid>/talk/2017-alg-xmas/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Learning to attend and ignore: The influence of reward learning on attentional capture and suppression</title>
+      <link>/talk/2016-ecvp-barcelona/</link>
+      <pubDate>Wed, 17 May 2017 00:00:00 +1000</pubDate>
+      
+      <guid>/talk/2016-ecvp-barcelona/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Looking to attend and ignore: Opposing influences of reward learning on attentional capture and suppression</title>
+      <link>/talk/2016-psychonomics-boston/</link>
+      <pubDate>Wed, 17 May 2017 00:00:00 +1000</pubDate>
+      
+      <guid>/talk/2016-psychonomics-boston/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Looking to avoid looking: Evidence for limited goal-directed control over value-modulated oculomotor capture</title>
+      <link>/talk/2017-psychonomics-vancouver/</link>
+      <pubDate>Wed, 17 May 2017 00:00:00 +1000</pubDate>
+      
+      <guid>/talk/2017-psychonomics-vancouver/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Looking to avoid: Instrumental control in value-modulated attentional capture</title>
+      <link>/talk/2016-alg-usyd/</link>
+      <pubDate>Wed, 17 May 2017 00:00:00 +1000</pubDate>
+      
+      <guid>/talk/2016-alg-usyd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Productive and counterproductive attention: Learning about signals of value.</title>
+      <link>/talk/2013-algxmas-usyd/</link>
+      <pubDate>Wed, 17 May 2017 00:00:00 +1000</pubDate>
+      
+      <guid>/talk/2013-algxmas-usyd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reward learning influences electrophysiological correlates of attentional capture and suppression</title>
+      <link>/talk/2015-gregynog-wales/</link>
+      <pubDate>Wed, 17 May 2017 00:00:00 +1000</pubDate>
+      
+      <guid>/talk/2015-gregynog-wales/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Training, not volitional cognitive control, affects the magnitude of value modulated attentional capture</title>
+      <link>/talk/2015-alg-bluemountains/</link>
+      <pubDate>Wed, 17 May 2017 00:00:00 +1000</pubDate>
+      
+      <guid>/talk/2015-alg-bluemountains/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rewarding outcomes can influence both attentional capture and suppression</title>
+      <link>/talk/2017-epc/</link>
+      <pubDate>Wed, 19 Apr 2017 00:00:00 +1000</pubDate>
+      
+      <guid>/talk/2017-epc/</guid>
+      <description></description>
     </item>
     
   </channel>

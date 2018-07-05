@@ -5,13 +5,13 @@ active = true
 date = 2016-04-20T00:00:00
 
 # Order that this section will appear in.
-weight = 5
+weight = 5 
 
 # List your academic interests.
 [interests]
   interests = [
-    "The influence of learning on visual attention",
-    "The role of attentional biases in mental illness",
+    "The influence of reward learning and prediction on perception (especially visual attention)",
+    "The role of perceptual biases in mental illness",
     "Cognitive models of psychosis"
   ]
 
@@ -32,9 +32,8 @@ weight = 5
   year = 2011
  
 +++
-
 # Biography
 
-Daniel Pearson is ...
+I am a Cognitive Psychology PhD student based out of the University of New South Wales (UNSW Sydney). I am currently working with [A/Prof. Mike Le Pelley](http://www.psy.unsw.edu.au/contacts-people/academic-staff/associate-professor-mike-le-pelley) and [A/Prof. Thomas Whitford](http://www.psy.unsw.edu.au/contacts-people/academic-staff/associate-professor-thomas-whitford) on a research project examining the effect of reward learning on attentional capture and control processes. You can find the details of my publications and presentations on this topic (and some others) below, or by downloading my {{% staticref "files/Daniel Pearson CV.pdf" %}}CV{{% /staticref %}}.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate. 
+I am also a Provisional Psychologist, and am currently undertaking my Master of Psychology (Clinical) training. As part of this training, I have gained experience working clinically with individuals experiencing depression, anxiety disorders, personality disorders, and psychosis.

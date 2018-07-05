@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Homes on Daniel Pearson</title>
+    <title>Homes on Daniel Pearson - UNSW Sydney</title>
     <link>/home/</link>
-    <description>Recent content in Homes on Daniel Pearson</description>
+    <description>Recent content in Homes on Daniel Pearson - UNSW Sydney</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
@@ -28,8 +28,7 @@
       <pubDate>Wed, 20 Apr 2016 00:00:00 +1000</pubDate>
       
       <guid>/home/about/</guid>
-      <description>Biography Daniel Pearson is &amp;hellip;
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.</description>
+      <description>Biography I am a Cognitive Psychology PhD student based out of the University of New South Wales (UNSW Sydney). I am currently working with A/Prof. Mike Le Pelley and A/Prof. Thomas Whitford on a research project examining the effect of reward learning on attentional capture and control processes. You can find the details of my publications and presentations on this topic (and some others) below, or by downloading my CV.</description>
     </item>
     
     <item>
@@ -38,20 +37,20 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristiq
       <pubDate>Wed, 20 Apr 2016 00:00:00 +1000</pubDate>
       
       <guid>/home/publications_selected/</guid>
-      <description></description>
+      <description>You may click on the links to access pdf versions of these papers. Your click on any of the links constitutes your request to me for a personal copy of the linked article, and my delivery of a personal copy. Any other use is prohibited. Please email me for copies of anything that’s not available here.</description>
     </item>
     
     <item>
-      <title>Recent Publications</title>
+      <title>Other Recent Publications</title>
       <link>/home/publications/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +1000</pubDate>
       
       <guid>/home/publications/</guid>
-      <description></description>
+      <description>For a full list of publications, click the link to the left or see my CV.</description>
     </item>
     
     <item>
-      <title>Recent &amp; Upcoming Talks</title>
+      <title>Recent Talks and Posters</title>
       <link>/home/talks/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +1000</pubDate>
       
@@ -83,8 +82,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristiq
       <pubDate>Wed, 20 Apr 2016 00:00:00 +1000</pubDate>
       
       <guid>/home/teaching/</guid>
-      <description>I have tutored for the following courses at UNSW Sydney:
- PSYC2001: Research Methods 2 (2015-2018, Head Tutor role 2017-2018) PSYC2071: Perception &amp;amp; Cognition (2015-2018)  </description>
+      <description>Head Tutor:
+ PSYC2001: Research Methods 2 (2017&amp;ndash;2018)  Tutor:
+ PSYC2001: Research Methods 2 (2015&amp;ndash;2016) PSYC2071: Perception &amp;amp; Cognition (2015&amp;ndash;2018)  </description>
     </item>
     
     <item>

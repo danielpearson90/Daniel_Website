@@ -1,24 +1,132 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>2 on Daniel Pearson</title>
+    <title>2 on Daniel Pearson - UNSW Sydney</title>
     <link>/publication_types/2/</link>
-    <description>Recent content in 2 on Daniel Pearson</description>
+    <description>Recent content in 2 on Daniel Pearson - UNSW Sydney</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Tue, 01 Sep 2015 00:00:00 +1000</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/publication_types/2/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>A Person Re-Identification System For Mobile Devices</title>
-      <link>/publication/person-re-identification/</link>
-      <pubDate>Tue, 01 Sep 2015 00:00:00 +1000</pubDate>
+      <title>Spatiotemporal competition and task-relevance shape the spatial distribution of emotional interference during rapid visual processing: Evidence from gaze-contingent eye-tracking</title>
+      <link>/publication/2018-01-01_spatiotemporal_compe/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>/publication/person-re-identification/</guid>
-      <description>More detail can easily be written here using Markdown and $\rm \LaTeX$ math code.</description>
+      <guid>/publication/2018-01-01_spatiotemporal_compe/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Miss it and miss out: Counterproductive nonspatial attentional capture by task-irrelevant, value-related stimuli</title>
+      <link>/publication/2017-01-01_miss_it_and_miss_out/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2017-01-01_miss_it_and_miss_out/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Neurophysiological evidence of efference copies to inner speech</title>
+      <link>/publication/2017-01-01_neurophysiological_e/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2017-01-01_neurophysiological_e/</guid>
+      <description>This is a description of the study that was done.</description>
+    </item>
+    
+    <item>
+      <title>Oculomotor capture is influenced by expected reward value but (maybe) not predictiveness</title>
+      <link>/publication/2017-01-01_oculomotor_capture_i/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2017-01-01_oculomotor_capture_i/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Selective attention moderates the relationship between attentional capture by signals of nondrug reward and illicit drug use</title>
+      <link>/publication/2017-01-01_selective_attention_/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2017-01-01_selective_attention_/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Configural learning in contextual cuing of visual search.</title>
+      <link>/publication/2016-01-01_configural_learning_/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2016-01-01_configural_learning_/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Value-modulated oculomotor capture by task-irrelevant stimuli is a consequence of early competition on the saccade map</title>
+      <link>/publication/2016-01-01_value-modulated_ocul/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2016-01-01_value-modulated_ocul/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cognitive control and counterproductive oculomotor capture by reward-related stimuli</title>
+      <link>/publication/2015-01-01_cognitive_control_an/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2015-01-01_cognitive_control_an/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Implicit learning of gaze-contingent events</title>
+      <link>/publication/2015-01-01_implicit_learning_of/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2015-01-01_implicit_learning_of/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Oculomotor capture by stimuli that signal the availability of reward</title>
+      <link>/publication/2015-01-01_oculomotor_capture_b/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2015-01-01_oculomotor_capture_b/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pre-exposure of repeated search configurations facilitates subsequent contextual cuing of visual search.</title>
+      <link>/publication/2015-01-01_pre-exposure_of_repe/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2015-01-01_pre-exposure_of_repe/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Uncertainty and predictiveness determine attention to cues during human associative learning</title>
+      <link>/publication/2015-01-01_uncertainty_and_pred/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2015-01-01_uncertainty_and_pred/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>When goals conflict with values: Counterproductive attentional and oculomotor capture by reward-related stimuli.</title>
+      <link>/publication/2015-01-01_when_goals_conflict_/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2015-01-01_when_goals_conflict_/</guid>
+      <description></description>
     </item>
     
   </channel>
