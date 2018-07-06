@@ -32,3 +32,5 @@ publication_type = "-1"
 +++
 
 _You may click on the links to access pdf versions of these papers. Your click on any of the links constitutes your request to me for a personal copy of the linked article, and my delivery of a personal copy. Any other use is prohibited. Please email me for copies of anything that’s not available here._
+
+_For a full list of publications, click the link to the left or see my {{% staticref "files/Daniel Pearson CV.pdf" %}}CV{{% /staticref %}}._
