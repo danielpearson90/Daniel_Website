@@ -46,9 +46,12 @@ enableGitInfo = false
   hardLineBreak = true
 
 [params]
+
+  description = "Daniel Pearson is a Cognitive Psychology PhD candidate based out of UNSW Sydney."
+  
   # Color theme.
   #   Choose from `default`, `ocean`, `forest`, `coffee`, `dark`, or `1950s`.
-  color_theme = "forest"
+  color_theme = "custom"
 
   # Font style.
   #   Choose from `default`, `classic`, or `playfair`.
@@ -56,7 +59,7 @@ enableGitInfo = false
 
   # Your details.
   name = "Daniel Pearson"
-  role = [{name ="Psychology PhD Student"}, {name="MPsych (Clinical) Student"}, {name="Provisional Psychologist"}]
+  role = [{name ="Psychology PhD Candidate"}, {name="MPsych (Clinical) Candidate"}, {name="Provisional Psychologist"}]
 
   # Organizations/Affiliations.
   #   Separate multiple entries with a comma, using the form: `[ {name="Org1", url=""}, {name="Org2", url=""} ]`.
