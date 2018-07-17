@@ -23,7 +23,7 @@ paginate = 10
 disqusShortname = ""
 
 # Enable analytics by entering your Google Analytics tracking ID
-googleAnalytics = ""
+googleAnalytics = "UA-121878571-1"
 
 # Default language to use (if you setup multilingual support)
 defaultContentLanguage = "en"
@@ -46,9 +46,12 @@ enableGitInfo = false
   hardLineBreak = true
 
 [params]
+
+  description = "Daniel Pearson is a Cognitive Psychology PhD candidate based out of UNSW Sydney."
+  
   # Color theme.
   #   Choose from `default`, `ocean`, `forest`, `coffee`, `dark`, or `1950s`.
-  color_theme = "forest"
+  color_theme = "custom"
 
   # Font style.
   #   Choose from `default`, `classic`, or `playfair`.
@@ -56,7 +59,7 @@ enableGitInfo = false
 
   # Your details.
   name = "Daniel Pearson"
-  role = [{name ="Psychology PhD Student"}, {name="MPsych (Clinical) Student"}, {name="Provisional Psychologist"}]
+  role = [{name ="Psychology PhD Candidate"}, {name="MPsych (Clinical) Candidate"}, {name="Provisional Psychologist"}]
 
   # Organizations/Affiliations.
   #   Separate multiple entries with a comma, using the form: `[ {name="Org1", url=""}, {name="Org2", url=""} ]`.
@@ -296,7 +299,7 @@ enableGitInfo = false
 [[menu.main]]
   name = "CV"
   url = "files/Daniel Pearson CV.pdf"
-  weight = 4
+  weight = 6
 
 [[menu.main]]
   name = "Contact"

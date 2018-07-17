@@ -20,7 +20,7 @@ selected = false
 projects = []
 
 # Links (optional).
-url_custom = [{name = "Poster", url = "https://drive.google.com/file/d/17u2r87FehFUXswD_7ziplrGJFn19ddZZ/view?usp=sharing"}]
+url_custom = [{name = "Poster", url = "files/Daniel Pearson Psychonomics Poster.pdf"}]
 url_pdf = ""
 url_slides = ""
 url_video = ""

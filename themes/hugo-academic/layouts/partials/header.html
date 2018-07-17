@@ -19,7 +19,7 @@
       {{ $scr.Set "description" .Summary }}
     {{ end }}
   {{ end }}
-  <meta name="description" content="{{ $scr.Get "description" }}">
+  <meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}">
 
   {{ range .Translations }}
   <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
