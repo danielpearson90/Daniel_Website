@@ -6,7 +6,7 @@ time_start = 2018-12-14T13:00:00
 time_end = 2030-06-01T15:00:00
 abstract = ""
 abstract_short = ""
-event = "Australian Learning Grouup Christmas Workshop"
+event = "Australian Learning Group Christmas Workshop"
 event_url = ""
 location = "UNSW, Sydney"
 
