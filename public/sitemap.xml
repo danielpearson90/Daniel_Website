@@ -5,6 +5,15 @@
     
     <url>
     
+      <loc>/publication/2019-01-01_getting_started_with/</loc>
+      <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/talk/2018-forensic-clinical-conference/</loc>
       <lastmod>2018-10-24T00:00:00+11:00</lastmod>
     </url>
@@ -16,6 +25,15 @@
     
       <loc>/privacy/</loc>
       <lastmod>2018-06-28T00:00:00+10:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/publication/2019-01-01_prioritizingpleasurepain/</loc>
+      <lastmod>2018-01-01T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -60,6 +78,15 @@
     <url>
     
       <loc>/talk/2017-alg-xmas/</loc>
+      <lastmod>2017-05-17T00:00:00+10:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/talk/2018-alg-xmas/</loc>
       <lastmod>2017-05-17T00:00:00+10:00</lastmod>
     </url>
     
@@ -295,6 +322,16 @@
     
       <loc>/publication_types/2/</loc>
       <lastmod>2018-01-01T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/publication_types/6/</loc>
+      <lastmod>2019-01-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
