@@ -11,6 +11,33 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Reward-related attentional capture is asociated with severity of addictive and obsessive-compulsive behaviors</title>
+      <link>/publication/2019-albertella-compulsivity/</link>
+      <pubDate>Thu, 20 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2019-albertella-compulsivity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Overt attentional capture by reward-related stimuli overcomes inhibitory suppression</title>
+      <link>/publication/2019-pearson-featuresuppression/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2019-pearson-featuresuppression/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Oculomotor capture is influenced by expected reward value but (maybe) not predictiveness</title>
+      <link>/publication/2017-01-01_oculomotor_capture_i/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2017-01-01_oculomotor_capture_i/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Learning to avoid looking: The effect of reward on attentional capture and control</title>
       <link>/talk/2018-forensic-clinical-conference/</link>
       <pubDate>Wed, 24 Oct 2018 00:00:00 +1100</pubDate>
@@ -27,6 +54,15 @@
       <guid>/privacy/</guid>
       <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Prioritizing pleasure and pain: Attentional capture by reward-related and punishment-related stimuli</title>
+      <link>/publication/2019-01-01_prioritizingpleasurepain/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2019-01-01_prioritizingpleasurepain/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -76,6 +112,15 @@
     
     <item>
       <title>Investigating Attentional Suppression of Reward-Related Distractors</title>
+      <link>/talk/2018-alg-xmas/</link>
+      <pubDate>Wed, 17 May 2017 00:00:00 +1000</pubDate>
+      
+      <guid>/talk/2018-alg-xmas/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Investigating Attentional Suppression of Reward-Related Distractors</title>
       <link>/talk/2018-psychomics-poster/</link>
       <pubDate>Wed, 17 May 2017 00:00:00 +1000</pubDate>
       
@@ -98,51 +143,6 @@
       <pubDate>Wed, 17 May 2017 00:00:00 +1000</pubDate>
       
       <guid>/talk/2016-psychonomics-boston/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Looking to avoid looking: Evidence for limited goal-directed control over value-modulated oculomotor capture</title>
-      <link>/talk/2017-psychonomics-vancouver/</link>
-      <pubDate>Wed, 17 May 2017 00:00:00 +1000</pubDate>
-      
-      <guid>/talk/2017-psychonomics-vancouver/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Looking to avoid: Instrumental control in value-modulated attentional capture</title>
-      <link>/talk/2016-alg-usyd/</link>
-      <pubDate>Wed, 17 May 2017 00:00:00 +1000</pubDate>
-      
-      <guid>/talk/2016-alg-usyd/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Productive and counterproductive attention: Learning about signals of value.</title>
-      <link>/talk/2013-algxmas-usyd/</link>
-      <pubDate>Wed, 17 May 2017 00:00:00 +1000</pubDate>
-      
-      <guid>/talk/2013-algxmas-usyd/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Reward learning influences electrophysiological correlates of attentional capture and suppression</title>
-      <link>/talk/2015-gregynog-wales/</link>
-      <pubDate>Wed, 17 May 2017 00:00:00 +1000</pubDate>
-      
-      <guid>/talk/2015-gregynog-wales/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Training, not volitional cognitive control, affects the magnitude of value modulated attentional capture</title>
-      <link>/talk/2015-alg-bluemountains/</link>
-      <pubDate>Wed, 17 May 2017 00:00:00 +1000</pubDate>
-      
-      <guid>/talk/2015-alg-bluemountains/</guid>
       <description></description>
     </item>
     

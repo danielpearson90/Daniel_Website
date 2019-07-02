@@ -8,7 +8,7 @@ publication_short = "eLife, (6), _pp. e28197_"
 abstract = ""
 abstract_short = ""
 image_preview = ""
-selected = true
+selected = false
 projects = []
 tags = []
 url_pdf = "https://cdn.elifesciences.org/articles/28197/elife-28197-v1.pdf"
@@ -21,7 +21,7 @@ url_video = ""
 url_poster = ""
 url_source = "https://doi.org/10.7554/eLife.28197.001"
 math = true
-highlight = true
+highlight = false
 [header]
 image = "headers/elife.jpeg"
 caption = ""
