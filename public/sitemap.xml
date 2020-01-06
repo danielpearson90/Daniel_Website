@@ -51,7 +51,7 @@
     <url>
     
       <loc>/talk/2018-forensic-clinical-conference/</loc>
-      <lastmod>2018-10-24T00:00:00+11:00</lastmod>
+      <lastmod>2018-10-24T00:00:00+01:00</lastmod>
     </url>
     
   
@@ -60,7 +60,7 @@
     <url>
     
       <loc>/privacy/</loc>
-      <lastmod>2018-06-28T00:00:00+10:00</lastmod>
+      <lastmod>2018-06-28T00:00:00+01:00</lastmod>
     </url>
     
   
@@ -96,7 +96,7 @@
     <url>
     
       <loc>/talk/2014-algxmas-unsw/</loc>
-      <lastmod>2017-05-17T00:00:00+10:00</lastmod>
+      <lastmod>2017-05-17T00:00:00+01:00</lastmod>
     </url>
     
   
@@ -105,7 +105,7 @@
     <url>
     
       <loc>/talk/2018-psychomics-amsterdam-poster/</loc>
-      <lastmod>2017-05-17T00:00:00+10:00</lastmod>
+      <lastmod>2017-05-17T00:00:00+01:00</lastmod>
     </url>
     
   
@@ -114,7 +114,7 @@
     <url>
     
       <loc>/talk/2017-alg-xmas/</loc>
-      <lastmod>2017-05-17T00:00:00+10:00</lastmod>
+      <lastmod>2017-05-17T00:00:00+01:00</lastmod>
     </url>
     
   
@@ -123,7 +123,7 @@
     <url>
     
       <loc>/talk/2018-alg-xmas/</loc>
-      <lastmod>2017-05-17T00:00:00+10:00</lastmod>
+      <lastmod>2017-05-17T00:00:00+01:00</lastmod>
     </url>
     
   
@@ -132,7 +132,7 @@
     <url>
     
       <loc>/talk/2018-psychomics-poster/</loc>
-      <lastmod>2017-05-17T00:00:00+10:00</lastmod>
+      <lastmod>2017-05-17T00:00:00+01:00</lastmod>
     </url>
     
   
@@ -141,7 +141,7 @@
     <url>
     
       <loc>/talk/2016-ecvp-barcelona/</loc>
-      <lastmod>2017-05-17T00:00:00+10:00</lastmod>
+      <lastmod>2017-05-17T00:00:00+01:00</lastmod>
     </url>
     
   
@@ -150,7 +150,7 @@
     <url>
     
       <loc>/talk/2016-psychonomics-boston/</loc>
-      <lastmod>2017-05-17T00:00:00+10:00</lastmod>
+      <lastmod>2017-05-17T00:00:00+01:00</lastmod>
     </url>
     
   
@@ -159,7 +159,7 @@
     <url>
     
       <loc>/talk/2017-psychonomics-vancouver/</loc>
-      <lastmod>2017-05-17T00:00:00+10:00</lastmod>
+      <lastmod>2017-05-17T00:00:00+01:00</lastmod>
     </url>
     
   
@@ -168,7 +168,7 @@
     <url>
     
       <loc>/talk/2016-alg-usyd/</loc>
-      <lastmod>2017-05-17T00:00:00+10:00</lastmod>
+      <lastmod>2017-05-17T00:00:00+01:00</lastmod>
     </url>
     
   
@@ -177,7 +177,7 @@
     <url>
     
       <loc>/talk/2013-algxmas-usyd/</loc>
-      <lastmod>2017-05-17T00:00:00+10:00</lastmod>
+      <lastmod>2017-05-17T00:00:00+01:00</lastmod>
     </url>
     
   
@@ -186,7 +186,7 @@
     <url>
     
       <loc>/talk/2015-gregynog-wales/</loc>
-      <lastmod>2017-05-17T00:00:00+10:00</lastmod>
+      <lastmod>2017-05-17T00:00:00+01:00</lastmod>
     </url>
     
   
@@ -195,7 +195,7 @@
     <url>
     
       <loc>/talk/2015-alg-bluemountains/</loc>
-      <lastmod>2017-05-17T00:00:00+10:00</lastmod>
+      <lastmod>2017-05-17T00:00:00+01:00</lastmod>
     </url>
     
   
@@ -204,7 +204,16 @@
     <url>
     
       <loc>/talk/2017-epc/</loc>
-      <lastmod>2017-04-19T00:00:00+10:00</lastmod>
+      <lastmod>2017-04-19T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/tags/academic/</loc>
+      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -230,7 +239,7 @@
     
     <url>
     
-      <loc>/publication/2017-01-01_selective_attention_/</loc>
+      <loc>/post/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -239,26 +248,8 @@
     
     <url>
     
-      <loc>/tags/academic/</loc>
-      <lastmod>2017-01-01T00:00:00+11:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/post/</loc>
-      <lastmod>2017-01-01T00:00:00+11:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
       <loc>/publication/</loc>
-      <lastmod>2017-01-01T00:00:00+11:00</lastmod>
+      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -267,7 +258,16 @@
     <url>
     
       <loc>/talk/</loc>
-      <lastmod>2017-01-01T00:00:00+11:00</lastmod>
+      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/publication/2017-01-01_selective_attention_/</loc>
+      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -385,7 +385,7 @@
     <url>
     
       <loc>/</loc>
-      <lastmod>2017-10-15T00:00:00+11:00</lastmod>
+      <lastmod>2017-10-15T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -405,7 +405,7 @@
     <url>
     
       <loc>/tags/</loc>
-      <lastmod>2017-01-01T00:00:00+11:00</lastmod>
+      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Daniel Pearson - UNSW Sydney on Daniel Pearson - UNSW Sydney</title>
+    <title>Daniel Pearson on Daniel Pearson</title>
     <link>/</link>
-    <description>Recent content in Daniel Pearson - UNSW Sydney on Daniel Pearson - UNSW Sydney</description>
+    <description>Recent content in Daniel Pearson on Daniel Pearson</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Sun, 15 Oct 2017 00:00:00 +1100</lastBuildDate>
+    <copyright>&amp;copy; 2019</copyright>
+    <lastBuildDate>Sun, 15 Oct 2017 00:00:00 +0100</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
@@ -58,7 +58,7 @@
     <item>
       <title>Learning to avoid looking: The effect of reward on attentional capture and control</title>
       <link>/talk/2018-forensic-clinical-conference/</link>
-      <pubDate>Wed, 24 Oct 2018 00:00:00 +1100</pubDate>
+      <pubDate>Wed, 24 Oct 2018 00:00:00 +0100</pubDate>
       
       <guid>/talk/2018-forensic-clinical-conference/</guid>
       <description></description>
@@ -67,7 +67,7 @@
     <item>
       <title>Privacy Policy</title>
       <link>/privacy/</link>
-      <pubDate>Thu, 28 Jun 2018 00:00:00 +1000</pubDate>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
       
       <guid>/privacy/</guid>
       <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
@@ -104,7 +104,7 @@
     <item>
       <title>Don’t look at the red circle: Instrumental, but not volitional, inhibition of value-modulated attentional capture</title>
       <link>/talk/2014-algxmas-unsw/</link>
-      <pubDate>Wed, 17 May 2017 00:00:00 +1000</pubDate>
+      <pubDate>Wed, 17 May 2017 00:00:00 +0100</pubDate>
       
       <guid>/talk/2014-algxmas-unsw/</guid>
       <description></description>
@@ -113,7 +113,7 @@
     <item>
       <title>Examining the test-retest reliability of reward-modulated attentional biases</title>
       <link>/talk/2018-psychomics-amsterdam-poster/</link>
-      <pubDate>Wed, 17 May 2017 00:00:00 +1000</pubDate>
+      <pubDate>Wed, 17 May 2017 00:00:00 +0100</pubDate>
       
       <guid>/talk/2018-psychomics-amsterdam-poster/</guid>
       <description></description>
@@ -122,7 +122,7 @@
     <item>
       <title>Examining the test-retest reliability of value-modulated attentional capture</title>
       <link>/talk/2017-alg-xmas/</link>
-      <pubDate>Wed, 17 May 2017 00:00:00 +1000</pubDate>
+      <pubDate>Wed, 17 May 2017 00:00:00 +0100</pubDate>
       
       <guid>/talk/2017-alg-xmas/</guid>
       <description></description>
@@ -131,7 +131,7 @@
     <item>
       <title>Investigating Attentional Suppression of Reward-Related Distractors</title>
       <link>/talk/2018-alg-xmas/</link>
-      <pubDate>Wed, 17 May 2017 00:00:00 +1000</pubDate>
+      <pubDate>Wed, 17 May 2017 00:00:00 +0100</pubDate>
       
       <guid>/talk/2018-alg-xmas/</guid>
       <description></description>
@@ -140,7 +140,7 @@
     <item>
       <title>Investigating Attentional Suppression of Reward-Related Distractors</title>
       <link>/talk/2018-psychomics-poster/</link>
-      <pubDate>Wed, 17 May 2017 00:00:00 +1000</pubDate>
+      <pubDate>Wed, 17 May 2017 00:00:00 +0100</pubDate>
       
       <guid>/talk/2018-psychomics-poster/</guid>
       <description></description>

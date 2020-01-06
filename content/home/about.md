@@ -20,7 +20,7 @@ weight = 5
 [[education.courses]]
   course = "PhD in Cognitive Psychology"
   institution = "UNSW Sydney"
-  year = "2019 (Expected Completion Date)"
+  year = "2019"
 
 [[education.courses]]
   course = "MPsych in Clinical Psychology"
@@ -35,6 +35,8 @@ weight = 5
 +++
 # Biography
 
-I am a researcher in cognitive psychology based at the University of New South Wales (UNSW Sydney). I am currently working with [A/Prof. Mike Le Pelley](http://www.psy.unsw.edu.au/contacts-people/academic-staff/associate-professor-mike-le-pelley) and [A/Prof. Thomas Whitford](http://www.psy.unsw.edu.au/contacts-people/academic-staff/associate-professor-thomas-whitford) on a research project examining the effect of reward learning on attentional capture and control processes. You can find the details of my publications and presentations on this topic (and some others) below, or by downloading my {{% staticref "files/Daniel Pearson CV.pdf" %}}CV{{% /staticref %}}.
+I am a cognitive psychologist and neuroscientist at UCL. I am currently working with [Prof. Nilli Lavie](https://www.ucl.ac.uk/icn/people/nilli-lavie) as a post-doctoral research fellow on projects examining the influence of attentional capacity, cognitive control, and prior selection history on attentional selection. I am interested in understanding the cognitive and neural mechanisms underlying selective attention, with a view to applying these findings to every day contexts (e.g., driving) as well as to further our understanding of psychopathology (e.g., substance use disorder, psychosis). 
 
-I am also a Provisional Psychologist, and have recently completed a Master of Psychology (Clinical). As part of this training, I have gained experience working clinically with individuals experiencing depression, anxiety disorders, trauma, and psychosis.
+You can find the details of my recent publications and presentations below. A full list of research outputs is available in my {{% staticref "files/Daniel Pearson CV.pdf" %}}CV{{% /staticref %}}.
+
+<!--I am also trained as a clinical psychologist, however I am not currently practicing. As part of this training, I have gained experience working clinically with individuals experiencing depression, anxiety disorders, trauma, and psychosis. -->

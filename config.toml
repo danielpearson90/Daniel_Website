@@ -6,11 +6,11 @@
 baseurl = "/"
 
 # Title of your site
-title = "Daniel Pearson - UNSW Sydney"
+title = "Daniel Pearson"
 
 # Your copyright notice - appears in site footer.
 # To display a copyright symbol, type `&copy;`.
-copyright = "&copy; 2018"
+copyright = "&copy; 2019"
 
 theme = "hugo-academic"
 enableEmoji = true
@@ -47,7 +47,7 @@ enableGitInfo = false
 
 [params]
 
-  description = "Daniel Pearson is a Cognitive Psychology PhD candidate based out of UNSW Sydney."
+  description = "Daniel Pearson is a cognitive psychologist at UCL."
   
   # Color theme.
   #   Choose from `default`, `ocean`, `forest`, `coffee`, `dark`, or `1950s`.
@@ -59,7 +59,7 @@ enableGitInfo = false
 
   # Your details.
   name = "Daniel Pearson"
-  role = [{name ="Psychology PhD Candidate"}, {name="MPsych (Clinical) Candidate"}, {name="Provisional Psychologist"}]
+  role = [{name ="Cognitive Psychologist"}, {name="Postdoctoral Research Fellow"}]
 
   # Organizations/Affiliations.
   #   Separate multiple entries with a comma, using the form: `[ {name="Org1", url=""}, {name="Org2", url=""} ]`.
@@ -67,8 +67,8 @@ enableGitInfo = false
 
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
   avatar = "profilepic1.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
-  email = "d.pearson@unsw.edu.au"
-  address = "Level 14, Mathews Building, UNSW Sydney, NSW Australia"
+  email = "daniel.pearsonn@ucl.ac.uk"
+  address = "Psychology and Language Sciences, 26 Bedford Way, London WC1H 0AP"
   #office_hours = "Monday 10:00 to 13:00 or email for appointment"
   #phone = "888 888 88 88"
   #skype = "echo123"
@@ -101,9 +101,9 @@ enableGitInfo = false
   #   2: OpenStreetMap (Mapnik)
   #   3: OpenStreetMap (Mapbox)
   map = 0
-  map_api_key = ""
-  latitude = "37.4275"
-  longitude = "-122.1697"
+  map_api_key = "AIzaSyCn9p0C9vtYUT-I1Ckknufj_r_1nJK3Ozc"
+  latitude = "51.5239"
+  longitude = "-0.128841"
   zoom = 15
 
   # Date and time format (refer to Go's date format: http://fuckinggodateformat.com )
