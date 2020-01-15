@@ -17,7 +17,7 @@ weight = 60
 
 __Head Tutor:__
 
-- PSYC2001: Research Methods 2 _(2017--2018)_
+- PSYC2001: Research Methods 2 _(2017--2019)_
 
 __Tutor:__
 
