@@ -230,7 +230,7 @@ enableGitInfo = false
   [[params.social]]
     icon = "envelope"
     icon_pack = "fa"
-    link = "mailto:d.pearson@unsw.edu.au"
+    link = "mailto:daniel.pearson@ucl.ac.uk"
 
   [[params.social]]
     icon = "twitter"
