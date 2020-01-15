@@ -35,7 +35,9 @@ weight = 5
 +++
 # Biography
 
-I am a cognitive psychologist and neuroscientist at UCL. I am currently working with [Prof. Nilli Lavie](https://www.ucl.ac.uk/icn/people/nilli-lavie) as a post-doctoral research fellow on projects examining the influence of attentional capacity, cognitive control, and prior selection history on attentional selection. I am interested in understanding the cognitive and neural mechanisms underlying selective attention, with a view to applying these findings to every day contexts (e.g., driving) as well as to further our understanding of psychopathology (e.g., substance use disorder, psychosis). 
+I am a cognitive psychologist and neuroscientist at UCL. I am currently working with [Prof. Nilli Lavie](https://www.ucl.ac.uk/icn/people/nilli-lavie) as a post-doctoral research fellow on projects examining the influence of perceptual capacity, cognitive control, and learned experience (i.e., selection history) on attention. 
+
+I am interested in understanding the cognitive and neural mechanisms underlying selective attention, with a view to applying these findings to real world contexts (e.g., designing alerts and warnings to rapidly capture attention) as well as to further our understanding of psychopathology (e.g., understanding how attention to reward-related cues interacts with substance use disorder and psychosis).
 
 You can find the details of my recent publications and presentations below. A full list of research outputs is available in my {{% staticref "files/Daniel Pearson CV.pdf" %}}CV{{% /staticref %}}.
 
