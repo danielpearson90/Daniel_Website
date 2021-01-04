@@ -47,7 +47,7 @@ enableGitInfo = false
 
 [params]
 
-  description = "Daniel Pearson is a cognitive psychologist at UCL."
+  description = "Daniel Pearson is a cognitive psychologist at UNSW Sydney."
   
   # Color theme.
   #   Choose from `default`, `ocean`, `forest`, `coffee`, `dark`, or `1950s`.
@@ -63,12 +63,12 @@ enableGitInfo = false
 
   # Organizations/Affiliations.
   #   Separate multiple entries with a comma, using the form: `[ {name="Org1", url=""}, {name="Org2", url=""} ]`.
-  organizations = [ { name = "Institute of Cognitive Neuroscience, UCL", url = "" } ]
+  organizations = [ { name = "School of Psychology, UNSW Sydney" url = "" } ]
 
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
   avatar = "profilepic1.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
   email = "daniel.pearsonn@ucl.ac.uk"
-  address = "Psychology and Language Sciences, 26 Bedford Way, London WC1H 0AP"
+  address = "School of Psychology, UNSW Sydney, NSW 2052"
   #office_hours = "Monday 10:00 to 13:00 or email for appointment"
   #phone = "888 888 88 88"
   #skype = "echo123"
