@@ -19,7 +19,7 @@ description = "How learned associations with information value shape attention a
 
 [[project]]
 title = "Attentional exploitation versus exploration"
-description = "Understanding and optimising how attention balances exploiting what we have learned against exploring new information. Funded by the Australian Research Council (2026&ndash;2030)."
+description = "Understanding and optimising how attention balances exploiting what we have learned against exploring new information. Funded by an Australian Research Council Discovery Project (DP260101915, 2026&ndash;2030)."
 collaborators = ["Mike Le Pelley", "Kelly Garner", "Jan Theeuwes"]
 papers = ["chow2026delaying", "chow2025effects", "pearson2024uncertainty", "le2017oculomotor"]
 
