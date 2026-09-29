@@ -15,6 +15,7 @@ relative (`research.html`, `static/files/cv.pdf`); content-file paths such as `f
   <title>$title</title>            <!-- home: "Daniel Pearson"; others: "Publications · Daniel Pearson" -->
   <meta name="description" content="$description">
   <link rel="preload" href="static/fonts/newsreader-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="static/fonts/ibm-plex-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="static/css/style.css">
 </head>
 <body>

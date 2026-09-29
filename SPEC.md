@@ -12,7 +12,7 @@ small Python script. No frameworks, no JavaScript required, no analytics, no ext
 - No cards, no boxes, no shadows, no stats, no metrics, no badges, no icons. Hierarchy comes from type
   size, weight, letter-spacing and whitespace alone. Thin 1px rules are allowed sparingly.
 - Fonts: self-hosted, SIL OFL, latin subset woff2 in `static/fonts/` (licence texts alongside), `font-display: swap`,
-  body font preloaded in `base.html`. Newsreader (variable weight, roman + italic) for name, headings and body;
+  body and label fonts preloaded in `base.html`. Newsreader (variable weight, roman + italic) for name, headings and body;
   IBM Plex Mono (400) for small uppercase labels, nav, dates, years, unit codes and links. System serif/monospace
   fallbacks follow each family. Total font payload about 135 KB. No requests to external hosts.
 - Type detail: tight negative tracking on the name and page titles, light (300) display weight, `text-wrap: balance`

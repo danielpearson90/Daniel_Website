@@ -75,6 +75,11 @@ a:focus-visible, img:focus-visible {
   border-radius: 1px;
 }
 @media (prefers-reduced-motion: reduce) { a { transition: none; } }
+/* Small mono links: enlarge the hit area to at least 24px without changing layout */
+.site-nav a, .contact a, .more a, .entry-links a { position: relative; }
+.site-nav a::before, .contact a::before, .more a::before, .entry-links a::before {
+  content: ""; position: absolute; inset: -0.35rem -0.25rem;
+}
 
 .skip-link {
   position: absolute; left: var(--gutter); top: 0;
@@ -142,6 +147,7 @@ main { padding-top: 3.5rem; padding-bottom: 6rem; }
   color: var(--muted);
 }
 .group-body { max-width: var(--measure); }
+.group:has(.entry-meta:first-child) .group-label { padding-top: 0; } /* align with a mono date, not a title */
 @media (min-width: 900px) {
   .group {
     display: grid; grid-template-columns: var(--label-col) minmax(0, 1fr);
@@ -160,7 +166,6 @@ main { padding-top: 3.5rem; padding-bottom: 6rem; }
   font-variant-numeric: lining-nums tabular-nums;
 }
 .entry-title { font-size: 1.1875rem; font-weight: 500; line-height: 1.35; letter-spacing: -0.005em; margin: 0; text-wrap: pretty; }
-h3.entry-title { font-size: 1.25rem; }
 .entry-authors, .entry-venue, .entry-detail, .entry-text { margin-top: 0.25rem; }
 .entry-authors, .entry-venue, .entry-detail { font-size: 1rem; line-height: 1.55; }
 .entry-venue, .entry-detail { color: var(--muted); }
@@ -192,14 +197,13 @@ h3.entry-title { font-size: 1.25rem; }
 
 /* Row entry: code, name, years (teaching courses) */
 .entry-row {
-  display: grid; grid-template-columns: 6.25rem minmax(0, max-content) auto; justify-content: start;
+  display: grid; grid-template-columns: 6.25rem minmax(0, 1fr) auto;
   gap: 0 1.25rem; font-size: 1rem; line-height: 1.55; align-items: baseline;
 }
-.entry-row .entry-code {
+.entry-row .entry-code, .entry-row .entry-years {
   font-family: var(--mono); font-size: 0.75rem; letter-spacing: 0.04em; color: var(--muted);
   font-variant-numeric: lining-nums tabular-nums;
 }
-.entry-row .entry-years { color: var(--muted); font-variant-numeric: lining-nums tabular-nums; }
 @media (max-width: 520px) {
   .entry-row { grid-template-columns: minmax(0, 1fr) auto; }
   .entry-row .entry-code { grid-column: 1 / -1; }
