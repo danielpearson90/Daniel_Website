@@ -14,8 +14,8 @@ relative (`research.html`, `static/files/cv.pdf`); content-file paths such as `f
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>$title</title>            <!-- home: "Daniel Pearson"; others: "Publications · Daniel Pearson" -->
   <meta name="description" content="$description">
-  <link rel="preload" href="static/fonts/newsreader-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="static/fonts/ibm-plex-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="static/fonts/0xpropo-latin-500.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="static/fonts/0xproto-latin-700.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="static/css/style.css">
 </head>
 <body>
@@ -45,7 +45,7 @@ The home page has no "active" nav item. Every page except home starts `<main>` w
 ## Group (the one layout pattern: label in left column, content right)
 
 Used for year groups (publications, talks, news), sections (News on home, teaching roles, Lab members, Collaborators)
-and news. Label is uppercase via CSS; write it in normal case.
+and news. Labels are shown as written (no CSS case change); fixed labels are written lowercase.
 
 ```html
 <section class="group">
@@ -63,7 +63,7 @@ Years newest first; entries within a year in source order. `ul.entries` gets ext
 
 Publication (title, authors, venue; links optional). Authors formatted "Surname, I., ... , &amp; Surname, I.";
 owner as `<strong>Pearson, D.</strong>` (two authors: "A &amp; B", no comma). Venue: `<em>Journal</em>, vol(issue), pages.` (en dash in pages).
-Link labels: `PDF`, `DOI` (plain text; CSS uppercases; only emit those that exist).
+Link labels: `PDF`, `DOI` (plain text; only emit those that exist).
 
 ```html
 <li class="entry">
@@ -171,4 +171,4 @@ real file if desired. Omit the email `<li>` if no email is set.
   `In G. Foster (Ed.), <em>Book title</em>.`; a `note` field (e.g. "Advance online publication") follows as its own sentence.
 - `--` in TOML year ranges and `--` in bib pages become en dashes. `canonical` links and `sitemap.xml` appear only if `base_url` is set.
 
-- Fonts are self-hosted in `static/fonts/` (Newsreader, IBM Plex Mono; OFL texts alongside) and declared in `style.css`. Home intro: portrait sits in the left label column, name/position/bio/contact in the right column, matching the `group` grid.
+- Fonts are self-hosted in `static/fonts/` (0xPropo Medium, 0xProto Bold; latin subsets, OFL texts alongside) and declared in `style.css`. Home intro: portrait sits in the left label column, name/position/bio/contact in the right column, matching the `group` grid.

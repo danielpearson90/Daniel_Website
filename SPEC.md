@@ -5,20 +5,22 @@ small Python script. No frameworks, no JavaScript required, no analytics, no ext
 
 ## Design brief
 
-- Minimal, typographic, monochrome (black, white, greys only). Stylish and quiet.
-- Lots of negative space. Generous margins and line height. Narrow measure for body text (~62ch).
+- Minimal and typographic, after the typography of msaktype.com: black, white and greys plus one accent colour
+  (vermilion, `--accent`), used only for links, the current nav item, selection and focus.
+- Lots of negative space. Generous margins and line height (2). Narrow measure for body text (~38rem).
 - Exactly one image on the whole site: the portrait on the home page (`static/img/portrait.jpg`),
   rendered in greyscale via CSS `filter: grayscale(1)`.
-- No cards, no boxes, no shadows, no stats, no metrics, no badges, no icons. Hierarchy comes from type
-  size, weight, letter-spacing and whitespace alone. Thin 1px rules are allowed sparingly.
+- No cards, no boxes, no shadows, no stats, no metrics, no badges, no icons. Everything is set at one size (1rem) except the
+  home page name and research project titles; otherwise hierarchy comes from weight, colour and whitespace. Thin 1px rules are allowed sparingly.
 - Fonts: self-hosted, SIL OFL, latin subset woff2 in `static/fonts/` (licence texts alongside), `font-display: swap`,
-  body and label fonts preloaded in `base.html`. Newsreader (variable weight, roman + italic) for name, headings and body;
-  IBM Plex Mono (400) for small uppercase labels, nav, dates, years, unit codes and links. System serif/monospace
-  fallbacks follow each family. Total font payload about 135 KB. No requests to external hosts.
-- Type detail: tight negative tracking on the name and page titles, light (300) display weight, `text-wrap: balance`
-  on headings and `pretty` on paragraphs, lining tabular numerals in labels, medium-weight publication titles,
-  italic venue lines. Links have a thin offset underline that darkens on hover (respects reduced motion).
-- Supports dark mode via `prefers-color-scheme: dark` (inverted monochrome). All colours as CSS custom
+  both fonts preloaded in `base.html`. 0xPropo Medium (proportional) for all text; 0xProto Bold (its monospaced
+  sibling, programming ligatures removed) for headings, group labels, the site name and `strong`. 0xPropo has no
+  italic, so venue italics are synthesised. Total font payload about 28 KB. No requests to external hosts.
+- Type detail: letter-spacing -0.01em; headings bold and lowercase (page titles, nav, section titles via CSS; fixed
+  labels written lowercase), page titles, the name and section titles preceded by a short 1px rule that hangs into
+  the left margin on desktop. `text-wrap: balance` on headings and `pretty` on paragraphs. Links in the accent
+  colour with a 1px underline offset 2px, turning to the text colour on hover (respects reduced motion).
+- Supports dark mode via `prefers-color-scheme: dark` (inverted, with a lighter accent). All colours as CSS custom
   properties on `:root`.
 - Responsive: works at 360px width with no horizontal scroll. 20px side gutters on mobile.
 - Accessible: semantic landmarks (`header`, `nav`, `main`, `footer`), visible focus styles, sufficient

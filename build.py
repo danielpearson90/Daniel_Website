@@ -447,7 +447,7 @@ def render_home(d: dict) -> str:
              f'        <nav class="contact" aria-label="Contact">\n          <ul>\n{lis}\n          </ul>\n        </nav>\n'
              f'      </div>\n    </section>\n')
     latest = entries([news_entry(n) for n in d["news"][:3]])
-    return intro + group("News", latest + '\n        <p class="more"><a href="news.html">All news</a></p>')
+    return intro + group("news", latest + '\n        <p class="more"><a href="news.html">All news</a></p>')
 
 
 def short_citation(r: dict) -> str:
@@ -512,10 +512,10 @@ def render_people(d: dict) -> str:
         items = [named_entry(m["name"], m.get("url"),
                              f"{m['role'].rstrip('.')}. {m['note']}" if m.get("note") else m["role"])
                  for m in d["people"]["members"]]
-        out += group("Lab members", entries(items, compact=True))
+        out += group("lab members", entries(items, compact=True))
     if d["people"]["collaborators"]:
         items = [named_entry(c["name"], c.get("url"), c["institution"]) for c in d["people"]["collaborators"]]
-        out += group("Collaborators", entries(items, compact=True))
+        out += group("collaborators", entries(items, compact=True))
     return out
 
 

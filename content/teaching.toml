@@ -5,7 +5,7 @@
 # on a role prints that heading before it (e.g. "Past appointments"); roles after it sit under it.
 
 [[role]]
-title = "Unit Coordinator & Lecturer"
+title = "unit coordinator & lecturer"
 
 [[role.course]]
 code = "PSYC3012"
@@ -20,7 +20,7 @@ code = "PSYC4124"
 name = "The Influence of Expectations on Perception and Attention (Honours Advanced Seminar)"
 
 [[role]]
-title = "Lecturer"
+title = "lecturer"
 
 [[role.course]]
 code = "PSYC3018"
@@ -32,7 +32,7 @@ name = "Perception, Cognition, and Intelligence"
 
 [[role]]
 section = "Past appointments"
-title = "Head Tutor, UNSW Sydney"
+title = "head tutor, UNSW Sydney"
 
 [[role.course]]
 code = "PSYC2001"
@@ -40,7 +40,7 @@ name = "Research Methods 2"
 years = "2017--2019"
 
 [[role]]
-title = "Tutor, UNSW Sydney"
+title = "tutor, UNSW Sydney"
 
 [[role.course]]
 code = "PSYC2001"

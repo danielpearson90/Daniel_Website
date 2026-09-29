@@ -47,6 +47,7 @@ Conventions that span files:
 - Every page uses the same `section.group` layout (label column + body column); new page types should reuse it
   rather than introduce new layout patterns.
 - Design constraints from `SPEC.md`: no JavaScript, no external requests (fonts self-hosted in `static/fonts/`),
-  monochrome only with colours as custom properties on `:root`, dark mode via `prefers-color-scheme`, exactly one
-  image (the portrait), no cards, boxes, shadows or icons.
+  one type size with hierarchy from weight and colour, monochrome plus one accent colour (links and current page
+  only), colours as custom properties on `:root`, dark mode via `prefers-color-scheme`, exactly one image (the
+  portrait), no cards, boxes, shadows or icons.
 - Text in `[square brackets]` in content files is a placeholder awaiting real information.
