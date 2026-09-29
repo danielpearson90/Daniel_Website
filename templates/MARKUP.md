@@ -14,6 +14,7 @@ relative (`research.html`, `static/files/cv.pdf`); content-file paths such as `f
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>$title</title>            <!-- home: "Daniel Pearson"; others: "Publications · Daniel Pearson" -->
   <meta name="description" content="$description">
+  <link rel="preload" href="static/fonts/newsreader-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="static/css/style.css">
 </head>
 <body>
@@ -167,3 +168,5 @@ real file if desired. Omit the email `<li>` if no email is set.
 - Publication venue variants: articles `<em>Journal</em>, vol(issue), pages.`; book chapters
   `In G. Foster (Ed.), <em>Book title</em>.`; a `note` field (e.g. "Advance online publication") follows as its own sentence.
 - `--` in TOML year ranges and `--` in bib pages become en dashes. `canonical` links and `sitemap.xml` appear only if `base_url` is set.
+
+- Fonts are self-hosted in `static/fonts/` (Newsreader, IBM Plex Mono; OFL texts alongside) and declared in `style.css`. Home intro: portrait sits in the left label column, name/position/bio/contact in the right column, matching the `group` grid.
