@@ -1,0 +1,200 @@
+/* Daniel Pearson: personal site. Monochrome, typographic, system fonts only. */
+
+/* ---- Tokens ---- */
+:root {
+  --bg: #fff;
+  --fg: #141414;
+  --muted: #5e5e5e;
+  --rule: #dcdcdc;
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  --sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --gutter: 20px;
+  --label-col: 10.5rem;
+  --col-gap: 2.5rem;
+  --measure: 40rem;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #121212; --fg: #e8e8e8; --muted: #9c9c9c; --rule: #333; }
+}
+
+/* ---- Base ---- */
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 1.0625rem/1.7 var(--serif);
+  font-kerning: normal;
+  font-variant-ligatures: common-ligatures;
+  text-rendering: optimizeLegibility;
+  overflow-wrap: break-word;
+}
+@media (min-width: 900px) { body { font-size: 1.125rem; } }
+p, ul, ol { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+strong { font-weight: 700; }
+::selection { background: var(--fg); color: var(--bg); }
+
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.22em;
+  text-decoration-color: var(--muted);
+}
+a:hover { text-decoration-color: currentColor; text-decoration-thickness: 2px; }
+a:focus-visible, img:focus-visible {
+  outline: 2px solid var(--fg);
+  outline-offset: 3px;
+  border-radius: 1px;
+}
+
+.skip-link {
+  position: absolute; left: var(--gutter); top: 0;
+  transform: translateY(-120%);
+  padding: 0.5rem 0.9rem;
+  background: var(--fg); color: var(--bg);
+  font: 0.875rem var(--sans);
+  z-index: 10;
+}
+.skip-link:focus { transform: translateY(0.75rem); }
+
+/* ---- Page frame ---- */
+.site-header, main, .site-footer {
+  width: 100%;
+  max-width: calc(64rem + 2 * var(--gutter));
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+@media (min-width: 900px) { :root { --gutter: 40px; } }
+
+/* ---- Header and navigation ---- */
+.site-header {
+  display: flex; flex-wrap: wrap; align-items: baseline;
+  justify-content: space-between; gap: 1rem 2rem;
+  padding-top: 2rem; padding-bottom: 1.25rem;
+  font-family: var(--sans);
+}
+.site-name {
+  font-size: 0.8125rem; font-weight: 600;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  text-decoration: none;
+}
+.site-nav ul { display: flex; flex-wrap: wrap; gap: 0.35rem 1.5rem; }
+.site-nav a {
+  display: inline-block; padding: 0.15rem 0;
+  font-size: 0.8125rem; letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--muted); text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+.site-nav a:hover { color: var(--fg); }
+.site-nav a[aria-current="page"] { color: var(--fg); border-bottom-color: var(--fg); }
+@media (min-width: 900px) { .site-header { padding-top: 3rem; } }
+
+/* ---- Main and page title ---- */
+main { padding-top: 3.5rem; padding-bottom: 6rem; }
+.page-title {
+  margin: 0 0 3.5rem;
+  font: 400 clamp(2rem, 1.4rem + 2.6vw, 3rem)/1.1 var(--serif);
+  letter-spacing: -0.015em;
+}
+@media (min-width: 900px) {
+  main { padding-top: 5rem; padding-bottom: 8rem; }
+  .page-title { margin-bottom: 4.5rem; margin-left: calc(var(--label-col) + var(--col-gap)); }
+}
+
+/* ---- Group: label column left, content right (years, sections) ---- */
+.group { margin-bottom: 3.25rem; }
+.group-label {
+  margin: 0 0 1rem;
+  font: 600 0.75rem/1.6 var(--sans);
+  letter-spacing: 0.14em; text-transform: uppercase;
+  font-variant-numeric: tabular-nums;
+  color: var(--muted);
+}
+.group-body { max-width: var(--measure); }
+@media (min-width: 900px) {
+  .group {
+    display: grid; grid-template-columns: var(--label-col) minmax(0, 1fr);
+    column-gap: var(--col-gap); margin-bottom: 4rem;
+  }
+  .group-label { margin: 0; padding-top: 0.55rem; }
+  .group + .group { border-top: 0; }
+}
+
+/* ---- Entry: one item in a list (publication, talk, project, person, news) ---- */
+.entries > .entry + .entry { margin-top: 1.75rem; }
+.entries--compact > .entry + .entry { margin-top: 1rem; }
+.entry-meta {
+  margin-bottom: 0.15rem;
+  font: 0.75rem/1.6 var(--sans);
+  letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted);
+}
+.entry-title { font-size: 1.0625rem; font-weight: 600; line-height: 1.45; margin: 0; }
+h3.entry-title { font-size: 1.25rem; font-weight: 600; letter-spacing: -0.005em; }
+.entry-authors, .entry-venue, .entry-detail, .entry-text { margin-top: 0.2rem; }
+.entry-authors, .entry-venue, .entry-detail { font-size: 0.9375rem; line-height: 1.6; }
+.entry-venue, .entry-detail { color: var(--muted); }
+.entry-authors { color: var(--fg); }
+.entry-text { margin-top: 0; }
+.entry-links { font-family: var(--sans); font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; white-space: nowrap; }
+.entry-links a { margin-left: 0.5rem; color: var(--fg); }
+.entry-links a:first-child { margin-left: 0.25rem; }
+.entry-title + .entry-text { margin-top: 0.5rem; }
+
+/* Row entry: label left, text right (teaching courses) */
+.entry-row { display: flex; flex-wrap: wrap; gap: 0 1.25rem; font-size: 0.9375rem; line-height: 1.6; }
+.entry-row .entry-code { flex: 0 0 5.5rem; font-family: var(--sans); font-size: 0.8125rem; letter-spacing: 0.06em; color: var(--muted); }
+.entry-row .entry-name { flex: 1 1 12rem; }
+.entry-row .entry-years { color: var(--muted); font-variant-numeric: tabular-nums; }
+.subhead { margin: 2rem 0 0.75rem; font: 600 1.0625rem/1.4 var(--serif); }
+.subhead:first-child { margin-top: 0; }
+
+/* ---- Prose ---- */
+.prose { max-width: 62ch; }
+.prose p + p { margin-top: 1.1em; }
+
+/* ---- Home ---- */
+.intro { margin-bottom: 5rem; }
+.portrait {
+  display: block; width: 9.5rem; height: auto; aspect-ratio: 4 / 5; object-fit: cover;
+  filter: grayscale(1); margin-bottom: 2.25rem;
+}
+.name {
+  margin: 0;
+  font: 400 clamp(2.75rem, 1.6rem + 5.6vw, 5.25rem)/1 var(--serif);
+  letter-spacing: -0.025em;
+}
+.position { margin: 1.25rem 0 2rem; font-size: 1.125rem; line-height: 1.5; color: var(--muted); }
+.intro .prose { margin-bottom: 2rem; }
+.contact { font: 0.8125rem/1.5 var(--sans); letter-spacing: 0.08em; text-transform: uppercase; }
+.contact ul { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; }
+@media (min-width: 900px) {
+  .intro {
+    display: grid; grid-template-columns: var(--label-col) minmax(0, 1fr);
+    column-gap: var(--col-gap); margin-bottom: 7rem; align-items: start;
+  }
+  .portrait { width: 100%; margin: 0.6rem 0 0; }
+  .position { margin-top: 1.5rem; margin-bottom: 2.5rem; }
+}
+.more { margin-top: 1.75rem; font: 0.75rem/1.6 var(--sans); letter-spacing: 0.1em; text-transform: uppercase; }
+
+/* ---- Footer ---- */
+.site-footer {
+  display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.25rem 2rem;
+  padding-top: 1.5rem; padding-bottom: 3rem;
+  font: 0.75rem/1.6 var(--sans); letter-spacing: 0.04em; color: var(--muted);
+  border-top: 1px solid var(--rule);
+  /* rule spans content width, not the viewport */
+  background: linear-gradient(var(--rule), var(--rule)) top / calc(100% - 2 * var(--gutter)) 1px no-repeat;
+  border-top: 0;
+}
+
+/* ---- Print ---- */
+@media print {
+  :root { --bg: #fff; --fg: #000; --muted: #444; }
+  .site-nav, .skip-link { display: none; }
+  main { padding-top: 1rem; }
+}

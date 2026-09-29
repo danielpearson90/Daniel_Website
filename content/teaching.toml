@@ -1,0 +1,25 @@
+# Teaching history. Each [[role]] has a `title` and a list of courses.
+# To add a course, copy a [[role.course]] block under the right [[role]]
+# (code, name, years as free text, e.g. "2015--2016"). To add a new role,
+# start a new [[role]] table followed by its [[role.course]] tables.
+
+[[role]]
+title = "Head Tutor"
+
+[[role.course]]
+code = "PSYC2001"
+name = "Research Methods 2"
+years = "2017--2019"
+
+[[role]]
+title = "Tutor"
+
+[[role.course]]
+code = "PSYC2001"
+name = "Research Methods 2"
+years = "2015--2016"
+
+[[role.course]]
+code = "PSYC2071"
+name = "Perception & Cognition"
+years = "2015--2018"

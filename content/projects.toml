@@ -1,0 +1,22 @@
+# Research projects, shown on research.html in the order listed.
+# To add one, copy a [[project]] block and fill in:
+#   title, years (free text, e.g. "2024--present"), description (plain text),
+#   collaborators (optional list of names).
+# All text is HTML-escaped.
+
+[[project]]
+title = "[Project title one]"
+years = "[2024--present]"
+description = "[One to three sentences describing the project and its aims.]"
+collaborators = ["[Collaborator Name]", "[Another Name]"]
+
+[[project]]
+title = "[Project title two]"
+years = "[2022--2024]"
+description = "[One to three sentences describing the project and its aims.]"
+
+[[project]]
+title = "[Project title three]"
+years = "[2020--2022]"
+description = "[One to three sentences describing the project and its aims.]"
+collaborators = ["[Collaborator Name]"]

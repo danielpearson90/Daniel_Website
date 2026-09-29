@@ -1,0 +1,23 @@
+# People page. Two kinds of entry:
+#   [[member]]       name, role, note (optional one-liner), url (optional)
+#   [[collaborator]] name, institution, url (optional)
+# To add someone, copy a block of the right kind and edit it. Order is preserved.
+
+[[member]]
+name = "[Member Name]"
+role = "[PhD student]"
+note = "[Optional one-line note about their work.]"
+url = ""
+
+[[member]]
+name = "[Member Name]"
+role = "[Research assistant]"
+
+[[collaborator]]
+name = "Mike E. Le Pelley"
+institution = "[Institution]"
+url = ""
+
+[[collaborator]]
+name = "[Collaborator Name]"
+institution = "[Institution]"

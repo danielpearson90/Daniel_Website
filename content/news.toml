@@ -1,0 +1,15 @@
+# News items; build.py sorts them newest first, so order here does not matter.
+# To add one, copy an [[item]] block: date = "YYYY-MM-DD" and text (one or two
+# sentences; inline HTML such as <a href="...">links</a> is allowed).
+
+[[item]]
+date = "2026-09-01"
+text = "[Placeholder news item: a new paper, talk or position.]"
+
+[[item]]
+date = "2026-06-15"
+text = "[Placeholder news item: another announcement, with an optional <a href=\"#\">link</a>.]"
+
+[[item]]
+date = "2026-03-10"
+text = "[Placeholder news item.]"

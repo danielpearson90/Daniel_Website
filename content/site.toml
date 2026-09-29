@@ -1,0 +1,57 @@
+# Site identity, bio and contact links.
+# Edit values in place. To add a link, add another [[link]] table with `label` and `url`
+# (a relative url such as "files/cv.pdf" is served from static/). `bio` is a list of
+# paragraphs; inline HTML (e.g. <a href="...">) is allowed in bio paragraphs only.
+# Anything in [square brackets] below is a placeholder to replace.
+
+name = "Daniel Pearson"
+owner_short = "D. Pearson"       # how the owner appears in author lists (rendered bold)
+position = "[Position, Department, University]"
+affiliation = "[University name]"
+email = "[email@example.edu]"
+base_url = ""                     # e.g. "https://example.com"; leave empty until a domain exists
+portrait = "img/portrait.jpg"
+portrait_alt = "Portrait of Daniel Pearson"
+
+bio = [
+  "[Bio paragraph 1: who you are and what you study.]",
+  "[Bio paragraph 2: current research directions and methods.]",
+  "[Bio paragraph 3 (optional): background, interests, how to get in touch.]",
+]
+
+[[link]]
+label = "Google Scholar"
+url = "https://scholar.google.com.au/citations?user=CxlKCBUAAAAJ"
+
+[[link]]
+label = "ORCID"
+url = "https://orcid.org/0000-0003-1903-4019"
+
+[[link]]
+label = "GitHub"
+url = "https://github.com/danielpearson90"
+
+[[link]]
+label = "CV"
+url = "files/cv.pdf"
+
+# Navigation: `file` is the page under dist/, `label` the menu text.
+[[nav]]
+file = "research.html"
+label = "Research"
+
+[[nav]]
+file = "publications.html"
+label = "Publications"
+
+[[nav]]
+file = "talks.html"
+label = "Talks & Teaching"
+
+[[nav]]
+file = "people.html"
+label = "People"
+
+[[nav]]
+file = "news.html"
+label = "News"
