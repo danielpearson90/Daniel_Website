@@ -8,8 +8,8 @@ small Python script. No frameworks, no JavaScript required, no analytics, no ext
 - Minimal and typographic, after the typography of msaktype.com: black, white and greys plus one accent colour
   (vermilion, `--accent`), used only for links, the current nav item, selection and focus.
 - Lots of negative space. Generous margins and line height (2). Narrow measure for body text (~38rem).
-- Exactly one image on the whole site: the portrait on the home page (`static/img/portrait.jpg`),
-  rendered in greyscale via CSS `filter: grayscale(1)`.
+- Exactly one image on the whole site: the portrait on the home page (`static/img/portrait.jpg`), shown in
+  colour.
 - No cards, no boxes, no shadows, no stats, no metrics, no badges, no icons. Everything is set at one size (1rem) except the
   home page name and research project titles; otherwise hierarchy comes from weight, colour and whitespace. Thin 1px rules are allowed sparingly.
 - Fonts: self-hosted, SIL OFL, latin subset woff2 in `static/fonts/` (licence texts alongside), `font-display: swap`,
