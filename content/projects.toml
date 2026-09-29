@@ -6,18 +6,23 @@
 #                 under "Key papers" as "Surname et al. (Year). Title." linked to its DOI
 #   collaborators (optional) list of names, shown as "With A, B"
 # An unknown key in `papers` stops the build with an error.
+#
+# `intro` (optional) is a list of paragraphs shown above the projects; inline HTML is allowed.
+
+intro = [
+  "My research investigates how learned associations determine what captures our attention. I use eye-tracking, electrophysiological techniques and computational modelling to explore how these attention mechanisms operate, adapt to changing environments and influence decision-making. This work has applications ranging from designing effective health and public policy communications to understanding addiction, vulnerability to misinformation and compulsive information-seeking.",
+]
 
 [[project]]
-title = "[Project title one]"
-description = "[One to three sentences describing the project and its aims.]"
-papers = ["pearson2016value", "pearson2015cognitive"]
-collaborators = ["[Collaborator Name]", "[Another Name]"]
+title = "Reward and attention"
+description = "How learned associations with reward, such as money, food or drugs, come to automatically capture attention, even when doing so works against our goals, and what this means for addiction."
+papers = ["le2015goals", "pearson2016value", "albertella2019reward"]
 
 [[project]]
-title = "[Project title two]"
-description = "[One to three sentences describing the project and its aims.]"
-papers = ["le2015goals"]
+title = "Information value and attention"
+description = "How stimuli that reduce our uncertainty automatically shape what we attend to, and how this relates to vulnerability to misinformation and compulsive information-seeking."
 
 [[project]]
-title = "[Project title three]"
-description = "[One to three sentences describing the project and its aims; no papers listed yet.]"
+title = "Attentional exploitation versus exploration"
+description = "Understanding and optimising how attention balances exploiting what we have learned against exploring new information. Funded by the Australian Research Council (2026&ndash;2030)."
+collaborators = ["Mike Le Pelley", "Kelly Garner", "Jan Theeuwes"]

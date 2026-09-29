@@ -155,12 +155,12 @@ h3.entry-title { font-size: 1.25rem; font-weight: 600; letter-spacing: -0.005em;
   font: 600 0.75rem/1.6 var(--sans); letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted);
 }
 .project-papers-label + .entries .entry-detail { margin-top: 0; }
+.research-intro { margin-bottom: 3.5rem; }
 @media (min-width: 900px) { .projects { margin-left: calc(var(--label-col) + var(--col-gap)); } }
 
 /* Row entry: label left, text right (teaching courses) */
-.entry-row { display: flex; flex-wrap: wrap; gap: 0 1.25rem; font-size: 0.9375rem; line-height: 1.6; }
-.entry-row .entry-code { flex: 0 0 5.5rem; font-family: var(--sans); font-size: 0.8125rem; letter-spacing: 0.06em; color: var(--muted); }
-.entry-row .entry-name { flex: 0 1 auto; }
+.entry-row { display: grid; grid-template-columns: 5.5rem minmax(0, max-content) auto; justify-content: start; gap: 0 1.25rem; font-size: 0.9375rem; line-height: 1.6; }
+.entry-row .entry-code { padding-top: 0.15em; font-family: var(--sans); font-size: 0.8125rem; letter-spacing: 0.06em; color: var(--muted); }
 .entry-row .entry-years { color: var(--muted); font-variant-numeric: tabular-nums; }
 
 /* ---- Prose ---- */

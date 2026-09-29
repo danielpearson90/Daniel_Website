@@ -106,9 +106,11 @@ def load_site() -> dict:
     return d
 
 
-def load_projects(pub_keys: set[str]) -> list[dict]:
+def load_projects(pub_keys: set[str]) -> dict:
+    """{"intro": [paragraphs], "items": [projects]}."""
     path = CONTENT / "projects.toml"
     d = load_toml(path)
+    _check_table(d, _rel(path), {}, {"intro": "strlist", "project": list})
     items = _table_list(d, "project", path)
     for i, p in enumerate(items, 1):
         where = f"{_rel(path)}: [[project]] #{i}"
@@ -120,7 +122,7 @@ def load_projects(pub_keys: set[str]) -> list[dict]:
             if key not in pub_keys:
                 raise ContentError(f"{where} ('{p['title']}'): paper key '{key}' not found in "
                                    f"content/publications.bib")
-    return items
+    return {"intro": d.get("intro", []), "items": items}
 
 
 def load_people() -> dict:
@@ -146,7 +148,7 @@ def load_teaching() -> list[dict]:
         _check_table(r, where, {"title": str}, {"course": list})
         r.setdefault("course", [])
         for j, c in enumerate(r["course"], 1):
-            _check_table(c, f"{where} course #{j}", {"code": str, "name": str, "years": str})
+            _check_table(c, f"{where} course #{j}", {"code": str, "name": str}, {"years": str})
     return roles
 
 
@@ -294,7 +296,7 @@ def check(data: dict) -> None:
     site = data["site"]
     print(f"site.toml        name={site['name']!r} links={[l['label'] for l in site['link']]} "
           f"base_url={site['base_url']!r}")
-    print(f"projects.toml    {len(data['projects'])} projects")
+    print(f"projects.toml    {len(data['projects']['items'])} projects, {len(data['projects']['intro'])} intro paragraphs")
     print(f"people.toml      {len(data['people']['members'])} members, "
           f"{len(data['people']['collaborators'])} collaborators")
     courses = sum(len(r['course']) for r in data['teaching'])
@@ -462,7 +464,10 @@ def short_citation(r: dict) -> str:
 def render_research(d: dict) -> str:
     pubs = {r["key"]: r for _, rs in d["publications"] for r in rs}
     out = []
-    for pr in d["projects"]:
+    if d["projects"]["intro"]:
+        paras = "\n".join(f"        <p>{para}</p>" for para in d["projects"]["intro"])  # inline HTML by design
+        out.append(f'    <div class="prose research-intro">\n{paras}\n    </div>')
+    for pr in d["projects"]["items"]:
         parts = [f'      <h2 class="project-title">{esc(pr["title"])}</h2>',
                  f'      <p class="project-text">{pr["description"]}</p>']  # inline HTML by design
         if pr["collaborators"]:
@@ -491,7 +496,8 @@ def render_teaching(d: dict) -> str:
             '          <li class="entry entry-row">\n'
             f'            <span class="entry-code">{esc(c["code"])}</span>\n'
             f'            <span class="entry-name">{esc(c["name"])}</span>\n'
-            f'            <span class="entry-years">{dash(c["years"])}</span>\n          </li>'
+            + (f'            <span class="entry-years">{dash(c["years"])}</span>\n' if c.get("years") else "")
+            + '          </li>'
             for c in role["course"])
         out += group(role["title"], f'        <ul class="entries entries--compact">\n{rows}\n        </ul>')
     return out

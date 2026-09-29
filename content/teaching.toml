@@ -1,10 +1,36 @@
 # Teaching history. Each [[role]] has a `title` and a list of courses.
 # To add a course, copy a [[role.course]] block under the right [[role]]
-# (code, name, years as free text, e.g. "2015--2016"). To add a new role,
+# (code, name, and optional years as free text, e.g. "2015--2016"). To add a new role,
 # start a new [[role]] table followed by its [[role.course]] tables.
 
 [[role]]
-title = "Head Tutor"
+title = "Unit Coordinator"
+
+[[role.course]]
+code = "PSYC3012"
+name = "Cognitive Psychology"
+
+[[role.course]]
+code = "OLET1634"
+name = "Anxiety & its Disorders"
+
+[[role.course]]
+code = "PSYC4124"
+name = "The Influence of Expectations on Perception and Attention (Honours Advanced Seminar)"
+
+[[role]]
+title = "Lecturer"
+
+[[role.course]]
+code = "PSYC3018"
+name = "Mental Health Conditions"
+
+[[role.course]]
+code = "PSYC2016"
+name = "Perception, Cognition, and Intelligence"
+
+[[role]]
+title = "Head Tutor, UNSW Sydney"
 
 [[role.course]]
 code = "PSYC2001"
@@ -12,7 +38,7 @@ name = "Research Methods 2"
 years = "2017--2019"
 
 [[role]]
-title = "Tutor"
+title = "Tutor, UNSW Sydney"
 
 [[role.course]]
 code = "PSYC2001"

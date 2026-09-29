@@ -14,10 +14,13 @@ name = "[Member Name]"
 role = "[Research assistant]"
 
 [[collaborator]]
-name = "Mike E. Le Pelley"
-institution = "[Institution]"
-url = ""
+name = "Mike Le Pelley"
+institution = "UNSW Sydney"
 
 [[collaborator]]
-name = "[Collaborator Name]"
+name = "Kelly Garner"
 institution = "[Institution]"
+
+[[collaborator]]
+name = "Jan Theeuwes"
+institution = "Vrije Universiteit Amsterdam"

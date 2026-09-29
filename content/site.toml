@@ -6,17 +6,16 @@
 
 name = "Daniel Pearson"
 owner_short = "D. Pearson"       # how the owner appears in author lists (rendered bold)
-position = "[Position, Department, University]"
-affiliation = "[University name]"
-email = "[email@example.edu]"
+position = "Lecturer, School of Psychology, The University of Sydney"
+affiliation = "The University of Sydney"
+email = ""                        # leave empty to hide the Email link
 base_url = ""                     # e.g. "https://example.com"; leave empty until a domain exists
 portrait = "img/portrait.jpg"
 portrait_alt = "Portrait of Daniel Pearson"
 
 bio = [
-  "[Bio paragraph 1: who you are and what you study.]",
-  "[Bio paragraph 2: current research directions and methods.]",
-  "[Bio paragraph 3 (optional): background, interests, how to get in touch.]",
+  "I am a cognitive psychologist investigating how our previous experiences automatically shape what we attend to, and the consequences for the decisions we make. My research explores why some information automatically captures our attention while other information is ignored, with implications ranging from addiction to vulnerability to misinformation.",
+  "I received my PhD in Psychology from UNSW Sydney in 2019, where I also completed a Bachelor of Science (Advanced) in Psychology and a Master of Psychology (Clinical). I held postdoctoral positions at the UCL Institute of Cognitive Neuroscience and UNSW Sydney, and joined the University of Sydney as a Lecturer in 2023.",
 ]
 
 [[link]]

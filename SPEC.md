@@ -43,9 +43,9 @@ content/
   site.toml          # identity, bio, contact links, nav
   publications.bib   # BibTeX, articles
   talks.bib          # BibTeX @misc entries (howpublished=event, location, date/year)
-  projects.toml      # [[project]] title, description (inline HTML ok), papers (bib keys, optional), collaborators (optional)
+  projects.toml      # intro (paragraphs, optional); [[project]] title, description (inline HTML ok), papers (bib keys, optional), collaborators (optional)
   people.toml        # [[member]] name, role, note?, url? ; [[collaborator]] name, institution, url?
-  teaching.toml      # [[role]] title ; each has [[role.course]] code, name, years
+  teaching.toml      # [[role]] title ; each has [[role.course]] code, name, years (optional)
   news.toml          # [[item]] date = "YYYY-MM-DD", text = "inline HTML allowed"
 templates/
   base.html          # shared shell, uses $placeholders (string.Template)
