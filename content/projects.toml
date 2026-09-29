@@ -14,11 +14,6 @@ intro = [
 ]
 
 [[project]]
-title = "Reward and attention"
-description = "How learned associations with reward, such as money, food or drugs, come to automatically capture attention, even when doing so works against our goals, and what this means for addiction."
-papers = ["le2015goals", "pearson2016value", "albertella2019reward"]
-
-[[project]]
 title = "Information value and attention"
 description = "How learned associations with information value shape attention and influence decision-making. Using eye-tracking, this project examines which information sources capture attention and the consequences for choices, and how individual differences in attention to information relate to anxious and compulsive traits, with the aim of informing public health communication and strategies to reduce misinformation. Funded by an Australian Research Council Future Fellowship."
 
@@ -26,3 +21,9 @@ description = "How learned associations with information value shape attention a
 title = "Attentional exploitation versus exploration"
 description = "Understanding and optimising how attention balances exploiting what we have learned against exploring new information. Funded by the Australian Research Council (2026&ndash;2030)."
 collaborators = ["Mike Le Pelley", "Kelly Garner", "Jan Theeuwes"]
+papers = ["chow2026delaying", "chow2025effects", "pearson2024uncertainty", "le2017oculomotor"]
+
+[[project]]
+title = "Attentional economics"
+description = "How learned associations with reward, such as money, food or drugs, come to automatically capture attention, even when doing so works against our goals. Current work focuses on the consequences of these reward-related attentional biases for decision-making."
+papers = ["pearson2022attentional", "pearson2016value", "pearson2015cognitive", "le2015goals"]
