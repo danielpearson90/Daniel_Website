@@ -152,10 +152,9 @@ on desktop), and every group label after it becomes `h3`.
     <nav class="contact" aria-label="Contact">
       <ul>
         <li><a href="mailto:...">Email</a></li>
+        <li><a href="https://profiles.sydney.edu.au/daniel.pearson">University profile</a></li>
         <li><a href="https://scholar.google.com.au/citations?user=CxlKCBUAAAAJ">Google Scholar</a></li>
         <li><a href="https://orcid.org/0000-0003-1903-4019">ORCID</a></li>
-        <li><a href="https://github.com/danielpearson90">GitHub</a></li>
-        <li><a href="static/files/cv.pdf">CV</a></li>
       </ul>
     </nav>
   </div>

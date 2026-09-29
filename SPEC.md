@@ -29,7 +29,7 @@ small Python script. No frameworks, no JavaScript required, no analytics, no ext
 
 | File                | Nav label     | Content |
 |---------------------|---------------|---------|
-| `index.html`        | (name, links home) | Portrait, name, one-line position, short bio (2-3 paras), contact line (email + text links: Google Scholar, ORCID, GitHub, CV), latest 3 news items with a "All news" link |
+| `index.html`        | (name, links home) | Portrait, name, one-line position, short bio (2-3 paras), contact line (email + text links: university profile, Google Scholar, ORCID), latest 3 news items with a "All news" link |
 | `research.html`     | Research      | Current projects (no dates): title, short description, optional collaborators, optional "Key papers" (short citations linked to DOI, keyed to publications.bib) |
 | `publications.html` | Publications  | Grouped by year, newest first. Site owner's name in bold in author lists. Optional `[PDF]` / `[DOI]` text links |
 | `talks.html`        | Talks         | Talks grouped by year (title, event, location, optional poster PDF link) |
