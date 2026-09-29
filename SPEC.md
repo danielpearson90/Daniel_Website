@@ -11,7 +11,7 @@ small Python script. No frameworks, no JavaScript required, no analytics, no ext
 - Exactly one image on the whole site: the portrait on the home page (`static/img/portrait.jpg`), shown in
   colour.
 - No cards, no boxes, no shadows, no stats, no metrics, no badges, no icons. Everything is set at one size (1rem) except the
-  home page name and research project titles; otherwise hierarchy comes from weight, colour and whitespace. Thin 1px rules are allowed sparingly.
+  home page name, research project titles and the key papers under each project (0.875rem); otherwise hierarchy comes from weight, colour and whitespace. Thin 1px rules are allowed sparingly.
 - Fonts: self-hosted, SIL OFL, latin subset woff2 in `static/fonts/` (licence texts alongside), `font-display: swap`,
   both fonts preloaded in `base.html`. 0xPropo Medium (proportional) for all text; 0xProto Bold (its monospaced
   sibling, programming ligatures removed) for headings, group labels, the site name and `strong`. 0xPropo has no
