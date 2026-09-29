@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>$title</title>
+  <meta name="description" content="$description">
+$canonical  <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="site-name" href="index.html">$name</a>
+    <nav class="site-nav" aria-label="Main">
+      <ul>
+$nav
+      </ul>
+    </nav>
+  </header>
+  <main id="main">
+$content
+  </main>
+  <footer class="site-footer">
+    <p>&copy; $year $name</p>
+    <p>Last built <time datetime="$built_iso">$built</time></p>
+  </footer>
+</body>
+</html>

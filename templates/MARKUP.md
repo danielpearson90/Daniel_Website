@@ -1,8 +1,8 @@
 # Markup reference
 
-Canonical examples live in `templates/mockup/*.html`; the build script must reproduce them. All text from
+The mockups have been removed; `build.py` + `templates/base.html` now generate this markup (see `dist/`). All text from
 content files is HTML-escaped except news text and bio paragraphs. Links to other pages and static files are
-relative (`research.html`, `static/files/cv.pdf`); mockups use `../../static/...` only because they sit in a subfolder.
+relative (`research.html`, `static/files/cv.pdf`); content-file paths such as `files/cv.pdf` are prefixed with `static/` at build time.
 
 ## Shell (identical on every page; `base.html`)
 
@@ -60,13 +60,13 @@ Years newest first; entries within a year in source order. `ul.entries` gets ext
 ## Entry variants (all `li.entry` inside `ul.entries`)
 
 Publication (title, authors, venue; links optional). Authors formatted "Surname, I., ... , &amp; Surname, I.";
-owner as `<strong>D. Pearson</strong>`. Venue: `<em>Journal</em>, vol(issue), pages.` (en dash in pages).
+owner as `<strong>Pearson, D.</strong>` (two authors: "A &amp; B", no comma). Venue: `<em>Journal</em>, vol(issue), pages.` (en dash in pages).
 Link labels: `PDF`, `DOI` (plain text; CSS uppercases; only emit those that exist).
 
 ```html
 <li class="entry">
   <p class="entry-title">Title</p>
-  <p class="entry-authors">Beesley, T., <strong>D. Pearson</strong>, &amp; Le Pelley, M.</p>
+  <p class="entry-authors">Beesley, T., <strong>Pearson, D.</strong>, &amp; Le Pelley, M.</p>
   <p class="entry-venue"><em>Journal</em>, 22(3), 800&ndash;807. <span class="entry-links"><a href="static/files/x.pdf">PDF</a> <a href="https://doi.org/...">DOI</a></span></p>
 </li>
 ```
@@ -154,3 +154,10 @@ Teaching (one `group` labelled "Teaching"; per role an `h3.subhead` then a compa
 
 Notes: the `width`/`height` attributes on the portrait are nominal (CSS sets size and 4:5 crop); adjust to the
 real file if desired. Omit the email `<li>` if no email is set.
+
+## Build notes
+
+- `base.html` placeholders: `$title $description $canonical $name $nav $content $year $built_iso $built`.
+- Publication venue variants: articles `<em>Journal</em>, vol(issue), pages.`; book chapters
+  `In G. Foster (Ed.), <em>Book title</em>.`; a `note` field (e.g. "Advance online publication") follows as its own sentence.
+- `--` in TOML year ranges and `--` in bib pages become en dashes. `canonical` links and `sitemap.xml` appear only if `base_url` is set.
