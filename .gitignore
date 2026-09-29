@@ -1,4 +1,3 @@
-.Rproj.user
-.Rhistory
-.RData
-.Ruserdata
+dist/
+__pycache__/
+.DS_Store
