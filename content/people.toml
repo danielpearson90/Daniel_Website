@@ -4,14 +4,12 @@
 # To add someone, copy a block of the right kind and edit it. Order is preserved.
 
 [[member]]
-name = "[Member Name]"
-role = "[PhD student]"
-note = "[Optional one-line note about their work.]"
-url = ""
+name = "Amy Chong"
+role = "PhD student, University of Sydney"
 
 [[member]]
-name = "[Member Name]"
-role = "[Research assistant]"
+name = "Riley Landfear"
+role = "Research assistant, University of Sydney"
 
 [[collaborator]]
 name = "Mike Le Pelley"
@@ -19,7 +17,7 @@ institution = "UNSW Sydney"
 
 [[collaborator]]
 name = "Kelly Garner"
-institution = "[Institution]"
+institution = "UNSW Sydney"
 
 [[collaborator]]
 name = "Jan Theeuwes"
