@@ -122,6 +122,8 @@ desktop; `description` is inline HTML). Collaborators line and "Key papers" list
 ```
 
 Teaching (`teaching.html`: one `group` per role, labelled with the role title, whose body is a compact list of courses).
+A role with a `section` key is preceded by `<h2 class="section-title">Past appointments</h2>` (in the content column
+on desktop), and every group label after it becomes `h3`.
 
 ```html
 <section class="group">

@@ -145,7 +145,7 @@ def load_teaching() -> list[dict]:
     roles = _table_list(d, "role", path)
     for i, r in enumerate(roles, 1):
         where = f"{_rel(path)}: [[role]] #{i}"
-        _check_table(r, where, {"title": str}, {"course": list})
+        _check_table(r, where, {"title": str}, {"course": list, "section": str})
         r.setdefault("course", [])
         for j, c in enumerate(r["course"], 1):
             _check_table(c, f"{where} course #{j}", {"code": str, "name": str}, {"years": str})
@@ -353,8 +353,8 @@ def a(href: str, label: str) -> str:
     return f'<a href="{esc(href)}">{esc(label)}</a>'
 
 
-def group(label: str, body: str) -> str:
-    return (f'    <section class="group">\n      <h2 class="group-label">{dash(label)}</h2>\n'
+def group(label: str, body: str, level: int = 2) -> str:
+    return (f'    <section class="group">\n      <h{level} class="group-label">{dash(label)}</h{level}>\n'
             f'      <div class="group-body">\n{body}\n      </div>\n    </section>\n')
 
 
@@ -490,8 +490,11 @@ def render_talks(d: dict) -> str:
 
 
 def render_teaching(d: dict) -> str:
-    out = ""
+    out, level = "", 2
     for role in d["teaching"]:
+        if role.get("section"):  # a heading before this role; later role labels nest under it
+            out += f'    <h2 class="section-title">{esc(role["section"])}</h2>\n'
+            level = 3
         rows = "\n".join(
             '          <li class="entry entry-row">\n'
             f'            <span class="entry-code">{esc(c["code"])}</span>\n'
@@ -499,7 +502,7 @@ def render_teaching(d: dict) -> str:
             + (f'            <span class="entry-years">{dash(c["years"])}</span>\n' if c.get("years") else "")
             + '          </li>'
             for c in role["course"])
-        out += group(role["title"], f'        <ul class="entries entries--compact">\n{rows}\n        </ul>')
+        out += group(role["title"], f'        <ul class="entries entries--compact">\n{rows}\n        </ul>', level)
     return out
 
 

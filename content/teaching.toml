@@ -1,10 +1,11 @@
 # Teaching history. Each [[role]] has a `title` and a list of courses.
 # To add a course, copy a [[role.course]] block under the right [[role]]
 # (code, name, and optional years as free text, e.g. "2015--2016"). To add a new role,
-# start a new [[role]] table followed by its [[role.course]] tables.
+# start a new [[role]] table followed by its [[role.course]] tables. An optional `section`
+# on a role prints that heading before it (e.g. "Past appointments"); roles after it sit under it.
 
 [[role]]
-title = "Unit Coordinator"
+title = "Unit Coordinator & Lecturer"
 
 [[role.course]]
 code = "PSYC3012"
@@ -30,6 +31,7 @@ code = "PSYC2016"
 name = "Perception, Cognition, and Intelligence"
 
 [[role]]
+section = "Past appointments"
 title = "Head Tutor, UNSW Sydney"
 
 [[role.course]]

@@ -195,6 +195,13 @@ main { padding-top: 3.5rem; padding-bottom: 6rem; }
 .research-intro { margin-bottom: 4rem; }
 @media (min-width: 900px) { .projects { margin-left: calc(var(--label-col) + var(--col-gap)); } }
 
+/* Section heading within a page (teaching: "Past appointments"); sits in the content column */
+.section-title {
+  margin: 5.5rem 0 2.5rem;
+  font: 500 1.625rem/1.2 var(--serif); letter-spacing: -0.02em;
+}
+@media (min-width: 900px) { .section-title { margin: 7rem 0 3rem calc(var(--label-col) + var(--col-gap)); } }
+
 /* Row entry: code, name, years (teaching courses) */
 .entry-row {
   display: grid; grid-template-columns: 6.25rem minmax(0, 1fr) auto;
