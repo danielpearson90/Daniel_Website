@@ -42,7 +42,7 @@ The home page has no "active" nav item. Every page except home starts `<main>` w
 
 ## Group (the one layout pattern: label in left column, content right)
 
-Used for year groups (publications, talks, news), sections (News on home, Teaching, Lab members, Collaborators)
+Used for year groups (publications, talks, news), sections (News on home, teaching roles, Lab members, Collaborators)
 and news. Label is uppercase via CSS; write it in normal case.
 
 ```html
@@ -119,17 +119,21 @@ desktop; `description` is inline HTML). Collaborators line and "Key papers" list
 </div>
 ```
 
-Teaching (one `group` labelled "Teaching"; per role an `h3.subhead` then a compact list of courses).
+Teaching (`teaching.html`: one `group` per role, labelled with the role title, whose body is a compact list of courses).
 
 ```html
-<h3 class="subhead">Role title</h3>
-<ul class="entries entries--compact">
-  <li class="entry entry-row">
-    <span class="entry-code">PSYC1001</span>
-    <span class="entry-name">Course name</span>
-    <span class="entry-years">2023&ndash;present</span>
-  </li>
-</ul>
+<section class="group">
+  <h2 class="group-label">Role title</h2>
+  <div class="group-body">
+    <ul class="entries entries--compact">
+      <li class="entry entry-row">
+        <span class="entry-code">PSYC1001</span>
+        <span class="entry-name">Course name</span>
+        <span class="entry-years">2023&ndash;present</span>
+      </li>
+    </ul>
+  </div>
+</section>
 ```
 
 ## Home intro (index.html only, before the News group)

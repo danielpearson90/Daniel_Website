@@ -481,8 +481,11 @@ def render_publications(d: dict) -> str:
 
 
 def render_talks(d: dict) -> str:
-    out = "".join(group(str(y), entries([talk_entry(r) for r in rs])) for y, rs in d["talks"])
-    body = []
+    return "".join(group(str(y), entries([talk_entry(r) for r in rs])) for y, rs in d["talks"])
+
+
+def render_teaching(d: dict) -> str:
+    out = ""
     for role in d["teaching"]:
         rows = "\n".join(
             '          <li class="entry entry-row">\n'
@@ -490,9 +493,8 @@ def render_talks(d: dict) -> str:
             f'            <span class="entry-name">{esc(c["name"])}</span>\n'
             f'            <span class="entry-years">{dash(c["years"])}</span>\n          </li>'
             for c in role["course"])
-        body.append(f'        <h3 class="subhead">{esc(role["title"])}</h3>\n'
-                    f'        <ul class="entries entries--compact">\n{rows}\n        </ul>')
-    return out + (group("Teaching", "\n".join(body)) if body else "")
+        out += group(role["title"], f'        <ul class="entries entries--compact">\n{rows}\n        </ul>')
+    return out
 
 
 def render_people(d: dict) -> str:
@@ -517,7 +519,8 @@ def render_news(d: dict) -> str:
 PAGES = {  # file -> (renderer, meta description)
     "research.html": (render_research, "Current research projects."),
     "publications.html": (render_publications, "Publications, grouped by year."),
-    "talks.html": (render_talks, "Conference talks, posters and teaching."),
+    "talks.html": (render_talks, "Conference talks and posters, grouped by year."),
+    "teaching.html": (render_teaching, "Teaching roles and courses."),
     "people.html": (render_people, "Lab members and collaborators."),
     "news.html": (render_news, "News and updates."),
 }

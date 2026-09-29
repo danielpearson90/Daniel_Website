@@ -15,7 +15,7 @@ requests, matching the site design.
 
 **Deploying.** From the repository root, run
 `DEPLOY_HOST=<container-ip> DEPLOY_USER=deploy DEPLOY_PATH=/var/www/site deploy/deploy.sh`
-(add `--dry-run` first to preview). It runs `python3 build.py`, then rsyncs `dist/` (the generated site: six pages plus `static/`) with
+(add `--dry-run` first to preview). It runs `python3 build.py`, then rsyncs `dist/` (the generated site: seven pages plus `static/`) with
 `--delete`. `DEPLOY_PORT` is optional. Because `--delete` removes anything else in the target
 folder, give this site its own directory.
 

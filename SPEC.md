@@ -29,7 +29,8 @@ fonts from CDNs, no icon fonts).
 | `index.html`        | (name, links home) | Portrait, name, one-line position, short bio (2-3 paras), contact line (email + text links: Google Scholar, ORCID, GitHub, CV), latest 3 news items with a "All news" link |
 | `research.html`     | Research      | Current projects (no dates): title, short description, optional collaborators, optional "Key papers" (short citations linked to DOI, keyed to publications.bib) |
 | `publications.html` | Publications  | Grouped by year, newest first. Site owner's name in bold in author lists. Optional `[PDF]` / `[DOI]` text links |
-| `talks.html`        | Talks & Teaching | Talks grouped by year (title, event, location, optional poster PDF link), then a Teaching section |
+| `talks.html`        | Talks         | Talks grouped by year (title, event, location, optional poster PDF link) |
+| `teaching.html`     | Teaching      | One group per role (Head Tutor, Tutor, ...), each a compact list of courses (code, name, years) |
 | `people.html`       | People        | Two sections: Lab members (name, role, optional one-line note) and Collaborators (name, institution) |
 | `news.html`         | News          | All news items, newest first: date (e.g. "Sep 2026") + one or two sentences |
 
@@ -58,7 +59,7 @@ deploy/              # deploy.sh + example web server config
 
 - Python 3.11+, standard library only (`tomllib`, `string.Template`, `html`, `pathlib`, `re`, `shutil`).
   No pip installs.
-- `python3 build.py` wipes and regenerates `dist/`, copies `static/` into it, writes all six pages.
+- `python3 build.py` wipes and regenerates `dist/`, copies `static/` into it, writes all seven pages.
 - A minimal BibTeX parser that handles the files in `content/`: nested braces, `\&`, `{\myname{pearson}}`
   (the site owner, rendered as `<strong>D. Pearson</strong>`), `--` to en dash, `and`-separated author
   lists formatted as "Surname, I." Optional fields `doi`, `pdf` (path under static), `url`.

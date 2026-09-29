@@ -46,7 +46,11 @@ label = "Publications"
 
 [[nav]]
 file = "talks.html"
-label = "Talks & Teaching"
+label = "Talks"
+
+[[nav]]
+file = "teaching.html"
+label = "Teaching"
 
 [[nav]]
 file = "people.html"
