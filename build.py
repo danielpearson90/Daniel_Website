@@ -106,14 +106,20 @@ def load_site() -> dict:
     return d
 
 
-def load_projects() -> list[dict]:
+def load_projects(pub_keys: set[str]) -> list[dict]:
     path = CONTENT / "projects.toml"
     d = load_toml(path)
     items = _table_list(d, "project", path)
     for i, p in enumerate(items, 1):
-        _check_table(p, f"{_rel(path)}: [[project]] #{i}",
-                     {"title": str, "years": str, "description": str}, {"collaborators": "strlist"})
+        where = f"{_rel(path)}: [[project]] #{i}"
+        _check_table(p, where, {"title": str, "description": str},
+                     {"collaborators": "strlist", "papers": "strlist"})
         p.setdefault("collaborators", [])
+        p.setdefault("papers", [])
+        for key in p["papers"]:
+            if key not in pub_keys:
+                raise ContentError(f"{where} ('{p['title']}'): paper key '{key}' not found in "
+                                   f"content/publications.bib")
     return items
 
 
@@ -267,13 +273,15 @@ def _check_duplicate_titles(recs: list[dict], source: str) -> None:
 def load_all() -> dict:
     site = load_site()
     owner = site["owner_short"]
+    publications = load_publications(owner)
+    pub_keys = {r["key"] for _, recs in publications for r in recs}
     return {
         "site": site,
-        "projects": load_projects(),
+        "projects": load_projects(pub_keys),
         "people": load_people(),
         "teaching": load_teaching(),
         "news": load_news(),
-        "publications": load_publications(owner),
+        "publications": publications,
         "talks": load_talks(owner),
     }
 
@@ -440,16 +448,32 @@ def render_home(d: dict) -> str:
     return intro + group("News", latest + '\n        <p class="more"><a href="news.html">All news</a></p>')
 
 
+def short_citation(r: dict) -> str:
+    """'Surname et al. (Year). Title.' with the title linked to its DOI (or local PDF)."""
+    fam = [x["family"] for x in r["authors"]]
+    fam = [esc(f) for f in fam]
+    who = fam[0] if len(fam) == 1 else f"{fam[0]} &amp; {fam[1]}" if len(fam) == 2 else f"{fam[0]} et al."
+    href = f"https://doi.org/{r['doi']}" if r["doi"] else local_url(r["pdf"]) if r["pdf"] else r["url"]
+    title = format_title(r["title"])
+    title = f'<a href="{esc(href)}">{title}</a>' if href else title
+    return f"{who} ({r['year']}). {title}."
+
+
 def render_research(d: dict) -> str:
-    out = ""
+    pubs = {r["key"]: r for _, rs in d["publications"] for r in rs}
+    out = []
     for pr in d["projects"]:
-        lines = [f'          <h3 class="entry-title">{esc(pr["title"])}</h3>',
-                 f'          <p class="entry-text">{esc(pr["description"])}</p>']
+        parts = [f'      <h2 class="project-title">{esc(pr["title"])}</h2>',
+                 f'      <p class="project-text">{pr["description"]}</p>']  # inline HTML by design
         if pr["collaborators"]:
-            lines.append(f'          <p class="entry-detail">With {esc(", ".join(pr["collaborators"]))}</p>')
-        out += group(pr["years"], '        <article class="entry">\n' + "\n".join(lines)
-                     + "\n        </article>")
-    return out
+            parts.append(f'      <p class="entry-detail">With {esc(", ".join(pr["collaborators"]))}</p>')
+        if pr["papers"]:
+            lis = "\n".join(f'        <li class="entry"><p class="entry-detail">{short_citation(pubs[k])}</p></li>'
+                            for k in pr["papers"])
+            parts.append('      <p class="project-papers-label">Key papers</p>\n'
+                         f'      <ul class="entries entries--compact">\n{lis}\n      </ul>')
+        out.append('    <article class="project">\n' + "\n".join(parts) + "\n    </article>")
+    return '    <div class="projects">\n' + "\n".join(out) + "\n    </div>\n"
 
 
 def render_publications(d: dict) -> str:

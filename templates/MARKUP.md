@@ -43,7 +43,7 @@ The home page has no "active" nav item. Every page except home starts `<main>` w
 ## Group (the one layout pattern: label in left column, content right)
 
 Used for year groups (publications, talks, news), sections (News on home, Teaching, Lab members, Collaborators)
-and research projects (label = years). Label is uppercase via CSS; write it in normal case.
+and news. Label is uppercase via CSS; write it in normal case.
 
 ```html
 <section class="group">
@@ -101,20 +101,22 @@ Lab member detail: role, then ". note" if present. Collaborator detail: institut
 </li>
 ```
 
-Research project (one `group` per project; label = years; body is an `article`, not a list). Collaborators
-line only if present.
+Research project (no year label; all projects sit in one `div.projects`, which is placed in the content column on
+desktop; `description` is inline HTML). Collaborators line and "Key papers" list only if present. Each paper is
+"Surname et al. (Year). Title." (one author: "Surname", two: "A &amp; B") with the title linked to the DOI, else the local PDF.
 
 ```html
-<section class="group">
-  <h2 class="group-label">2024&ndash;present</h2>
-  <div class="group-body">
-    <article class="entry">
-      <h3 class="entry-title">Project title</h3>
-      <p class="entry-text">Description.</p>
-      <p class="entry-detail">With A, B</p>
-    </article>
-  </div>
-</section>
+<div class="projects">
+  <article class="project">
+    <h2 class="project-title">Project title</h2>
+    <p class="project-text">Description.</p>
+    <p class="entry-detail">With A, B</p>
+    <p class="project-papers-label">Key papers</p>
+    <ul class="entries entries--compact">
+      <li class="entry"><p class="entry-detail">Pearson et al. (2016). <a href="https://doi.org/...">Paper title</a>.</p></li>
+    </ul>
+  </article>
+</div>
 ```
 
 Teaching (one `group` labelled "Teaching"; per role an `h3.subhead` then a compact list of courses).

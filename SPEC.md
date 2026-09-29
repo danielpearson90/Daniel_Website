@@ -27,7 +27,7 @@ fonts from CDNs, no icon fonts).
 | File                | Nav label     | Content |
 |---------------------|---------------|---------|
 | `index.html`        | (name, links home) | Portrait, name, one-line position, short bio (2-3 paras), contact line (email + text links: Google Scholar, ORCID, GitHub, CV), latest 3 news items with a "All news" link |
-| `research.html`     | Research      | Current projects: title, years, short description, optional collaborators |
+| `research.html`     | Research      | Current projects (no dates): title, short description, optional collaborators, optional "Key papers" (short citations linked to DOI, keyed to publications.bib) |
 | `publications.html` | Publications  | Grouped by year, newest first. Site owner's name in bold in author lists. Optional `[PDF]` / `[DOI]` text links |
 | `talks.html`        | Talks & Teaching | Talks grouped by year (title, event, location, optional poster PDF link), then a Teaching section |
 | `people.html`       | People        | Two sections: Lab members (name, role, optional one-line note) and Collaborators (name, institution) |
@@ -42,7 +42,7 @@ content/
   site.toml          # identity, bio, contact links, nav
   publications.bib   # BibTeX, articles
   talks.bib          # BibTeX @misc entries (howpublished=event, location, date/year)
-  projects.toml      # [[project]] title, years, description, collaborators (list, optional)
+  projects.toml      # [[project]] title, description (inline HTML ok), papers (bib keys, optional), collaborators (optional)
   people.toml        # [[member]] name, role, note?, url? ; [[collaborator]] name, institution, url?
   teaching.toml      # [[role]] title ; each has [[role.course]] code, name, years
   news.toml          # [[item]] date = "YYYY-MM-DD", text = "inline HTML allowed"

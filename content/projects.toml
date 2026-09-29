@@ -1,22 +1,23 @@
-# Research projects, shown on research.html in the order listed.
+# Research projects, shown on research.html in the order listed. Projects have no dates.
 # To add one, copy a [[project]] block and fill in:
-#   title, years (free text, e.g. "2024--present"), description (plain text),
-#   collaborators (optional list of names).
-# All text is HTML-escaped.
+#   title         (required) plain text
+#   description   (required) one to three sentences; inline HTML such as <a href="...">links</a> is allowed
+#   papers        (optional) list of citation keys from content/publications.bib; each is shown
+#                 under "Key papers" as "Surname et al. (Year). Title." linked to its DOI
+#   collaborators (optional) list of names, shown as "With A, B"
+# An unknown key in `papers` stops the build with an error.
 
 [[project]]
 title = "[Project title one]"
-years = "[2024--present]"
 description = "[One to three sentences describing the project and its aims.]"
+papers = ["pearson2016value", "pearson2015cognitive"]
 collaborators = ["[Collaborator Name]", "[Another Name]"]
 
 [[project]]
 title = "[Project title two]"
-years = "[2022--2024]"
 description = "[One to three sentences describing the project and its aims.]"
+papers = ["le2015goals"]
 
 [[project]]
 title = "[Project title three]"
-years = "[2020--2022]"
-description = "[One to three sentences describing the project and its aims.]"
-collaborators = ["[Collaborator Name]"]
+description = "[One to three sentences describing the project and its aims; no papers listed yet.]"
