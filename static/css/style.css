@@ -147,7 +147,7 @@ h3.entry-title { font-size: 1.25rem; font-weight: 600; letter-spacing: -0.005em;
 /* Row entry: label left, text right (teaching courses) */
 .entry-row { display: flex; flex-wrap: wrap; gap: 0 1.25rem; font-size: 0.9375rem; line-height: 1.6; }
 .entry-row .entry-code { flex: 0 0 5.5rem; font-family: var(--sans); font-size: 0.8125rem; letter-spacing: 0.06em; color: var(--muted); }
-.entry-row .entry-name { flex: 1 1 12rem; }
+.entry-row .entry-name { flex: 0 1 auto; }
 .entry-row .entry-years { color: var(--muted); font-variant-numeric: tabular-nums; }
 .subhead { margin: 2rem 0 0.75rem; font: 600 1.0625rem/1.4 var(--serif); }
 .subhead:first-child { margin-top: 0; }
@@ -186,10 +186,8 @@ h3.entry-title { font-size: 1.25rem; font-weight: 600; letter-spacing: -0.005em;
   display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.25rem 2rem;
   padding-top: 1.5rem; padding-bottom: 3rem;
   font: 0.75rem/1.6 var(--sans); letter-spacing: 0.04em; color: var(--muted);
-  border-top: 1px solid var(--rule);
   /* rule spans content width, not the viewport */
   background: linear-gradient(var(--rule), var(--rule)) top / calc(100% - 2 * var(--gutter)) 1px no-repeat;
-  border-top: 0;
 }
 
 /* ---- Print ---- */

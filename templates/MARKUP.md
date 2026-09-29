@@ -1,0 +1,156 @@
+# Markup reference
+
+Canonical examples live in `templates/mockup/*.html`; the build script must reproduce them. All text from
+content files is HTML-escaped except news text and bio paragraphs. Links to other pages and static files are
+relative (`research.html`, `static/files/cv.pdf`); mockups use `../../static/...` only because they sit in a subfolder.
+
+## Shell (identical on every page; `base.html`)
+
+```html
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>$title</title>            <!-- home: "Daniel Pearson"; others: "Publications · Daniel Pearson" -->
+  <meta name="description" content="$description">
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="site-name" href="index.html">Daniel Pearson</a>      <!-- site.toml name -->
+    <nav class="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="research.html">Research</a></li>              <!-- one per site.toml nav item -->
+        <li><a href="news.html" aria-current="page">News</a></li>  <!-- aria-current only on active page -->
+      </ul>
+    </nav>
+  </header>
+  <main id="main">
+$content
+  </main>
+  <footer class="site-footer">
+    <p>&copy; 2026 Daniel Pearson</p>                              <!-- build year, name -->
+    <p>Last built <time datetime="2026-09-29">29 September 2026</time></p>
+  </footer>
+</body>
+</html>
+```
+
+The home page has no "active" nav item. Every page except home starts `<main>` with `<h1 class="page-title">`.
+
+## Group (the one layout pattern: label in left column, content right)
+
+Used for year groups (publications, talks, news), sections (News on home, Teaching, Lab members, Collaborators)
+and research projects (label = years). Label is uppercase via CSS; write it in normal case.
+
+```html
+<section class="group">
+  <h2 class="group-label">2017</h2>
+  <div class="group-body">
+    <ul class="entries"> <li class="entry">...</li> ... </ul>
+  </div>
+</section>
+```
+
+Years newest first; entries within a year in source order. `ul.entries` gets extra class `entries--compact`
+(`class="entries entries--compact"`) for people lists and teaching courses.
+
+## Entry variants (all `li.entry` inside `ul.entries`)
+
+Publication (title, authors, venue; links optional). Authors formatted "Surname, I., ... , &amp; Surname, I.";
+owner as `<strong>D. Pearson</strong>`. Venue: `<em>Journal</em>, vol(issue), pages.` (en dash in pages).
+Link labels: `PDF`, `DOI` (plain text; CSS uppercases; only emit those that exist).
+
+```html
+<li class="entry">
+  <p class="entry-title">Title</p>
+  <p class="entry-authors">Beesley, T., <strong>D. Pearson</strong>, &amp; Le Pelley, M.</p>
+  <p class="entry-venue"><em>Journal</em>, 22(3), 800&ndash;807. <span class="entry-links"><a href="static/files/x.pdf">PDF</a> <a href="https://doi.org/...">DOI</a></span></p>
+</li>
+```
+
+Talk (no authors line). `howpublished, location.`; optional poster link labelled `Poster`.
+
+```html
+<li class="entry">
+  <p class="entry-title">Talk title</p>
+  <p class="entry-venue">Event name, Location. <span class="entry-links"><a href="static/files/poster.pdf">Poster</a></span></p>
+</li>
+```
+
+News (dated entry; `datetime` is the ISO date, visible text "Sep 2026"; text is inline HTML). Home shows the
+latest 3 in one `group` labelled "News" followed by `<p class="more"><a href="news.html">All news</a></p>`
+placed inside `.group-body` after the `ul`. news.html groups by year like publications.
+
+```html
+<li class="entry">
+  <time class="entry-meta" datetime="2026-09-29">Sep 2026</time>
+  <p class="entry-text">Text, <a href="#">inline HTML allowed</a>.</p>
+</li>
+```
+
+Person / collaborator (inside a `group` with `entries entries--compact`). Name may be wrapped in `<a>` if url.
+Lab member detail: role, then ". note" if present. Collaborator detail: institution.
+
+```html
+<li class="entry">
+  <p class="entry-title">Name</p>
+  <p class="entry-detail">Role. Optional note.</p>
+</li>
+```
+
+Research project (one `group` per project; label = years; body is an `article`, not a list). Collaborators
+line only if present.
+
+```html
+<section class="group">
+  <h2 class="group-label">2024&ndash;present</h2>
+  <div class="group-body">
+    <article class="entry">
+      <h3 class="entry-title">Project title</h3>
+      <p class="entry-text">Description.</p>
+      <p class="entry-detail">With A, B</p>
+    </article>
+  </div>
+</section>
+```
+
+Teaching (one `group` labelled "Teaching"; per role an `h3.subhead` then a compact list of courses).
+
+```html
+<h3 class="subhead">Role title</h3>
+<ul class="entries entries--compact">
+  <li class="entry entry-row">
+    <span class="entry-code">PSYC1001</span>
+    <span class="entry-name">Course name</span>
+    <span class="entry-years">2023&ndash;present</span>
+  </li>
+</ul>
+```
+
+## Home intro (index.html only, before the News group)
+
+```html
+<section class="intro">
+  <img class="portrait" src="static/img/portrait.jpg" alt="Portrait of Daniel Pearson" width="400" height="500">
+  <div class="intro-text">
+    <h1 class="name">Daniel Pearson</h1>
+    <p class="position">Position, Department, University</p>
+    <div class="prose"><p>Bio paragraph (inline HTML)</p><p>...</p></div>
+    <nav class="contact" aria-label="Contact">
+      <ul>
+        <li><a href="mailto:...">Email</a></li>
+        <li><a href="https://scholar.google.com.au/citations?user=CxlKCBUAAAAJ">Google Scholar</a></li>
+        <li><a href="https://orcid.org/0000-0003-1903-4019">ORCID</a></li>
+        <li><a href="https://github.com/danielpearson90">GitHub</a></li>
+        <li><a href="static/files/cv.pdf">CV</a></li>
+      </ul>
+    </nav>
+  </div>
+</section>
+```
+
+Notes: the `width`/`height` attributes on the portrait are nominal (CSS sets size and 4:5 crop); adjust to the
+real file if desired. Omit the email `<li>` if no email is set.
