@@ -20,7 +20,7 @@ papers = ["le2015goals", "pearson2016value", "albertella2019reward"]
 
 [[project]]
 title = "Information value and attention"
-description = "How stimuli that reduce our uncertainty automatically shape what we attend to, and how this relates to vulnerability to misinformation and compulsive information-seeking."
+description = "How learned associations with information value shape attention and influence decision-making. Using eye-tracking, this project examines which information sources capture attention and the consequences for choices, and how individual differences in attention to information relate to anxious and compulsive traits, with the aim of informing public health communication and strategies to reduce misinformation. Funded by an Australian Research Council Future Fellowship."
 
 [[project]]
 title = "Attentional exploitation versus exploration"
