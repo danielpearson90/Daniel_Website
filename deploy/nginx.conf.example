@@ -1,0 +1,42 @@
+# Serve the static site with nginx. Drop in /etc/nginx/conf.d/site.conf (or sites-available).
+server {
+    listen 80;
+    listen [::]:80;
+    server_name _;                 # replace with your domain once you have one
+
+    root /var/www/site;
+    index index.html;
+    server_tokens off;
+
+    # Security headers
+    add_header X-Content-Type-Options "nosniff" always;
+    add_header X-Frame-Options "DENY" always;
+    add_header Referrer-Policy "strict-origin-when-cross-origin" always;
+    add_header Permissions-Policy "camera=(), microphone=(), geolocation=()" always;
+    add_header Content-Security-Policy "default-src 'none'; img-src 'self'; style-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'" always;
+    # Enable once the site is served over HTTPS:
+    # add_header Strict-Transport-Security "max-age=31536000" always;
+
+    gzip on;
+    gzip_types text/css text/plain application/javascript image/svg+xml;
+
+    location / {
+        try_files $uri $uri/ =404;
+        add_header Cache-Control "no-cache" always;
+        # add_header lines are not inherited once a location defines its own,
+        # so repeat the security headers here if you add more add_header directives.
+    }
+
+    # Static assets and PDFs: cache for a week.
+    location ~* ^/(css|img|files)/ {
+        expires 7d;
+        add_header Cache-Control "public" always;
+        add_header X-Content-Type-Options "nosniff" always;
+        add_header X-Frame-Options "DENY" always;
+        add_header Referrer-Policy "strict-origin-when-cross-origin" always;
+        add_header Content-Security-Policy "default-src 'none'; img-src 'self'; style-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'" always;
+        try_files $uri =404;
+    }
+
+    location ~ /\. { deny all; }
+}

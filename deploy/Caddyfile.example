@@ -1,0 +1,31 @@
+# Serve the static site with Caddy.
+# Replace :80 with your domain (e.g. example.com) once you have one; Caddy then
+# obtains and renews HTTPS certificates automatically.
+:80 {
+	root * /var/www/site
+	file_server
+	encode zstd gzip
+
+	header {
+		X-Content-Type-Options "nosniff"
+		X-Frame-Options "DENY"
+		Referrer-Policy "strict-origin-when-cross-origin"
+		Permissions-Policy "camera=(), microphone=(), geolocation=()"
+		Content-Security-Policy "default-src 'none'; img-src 'self'; style-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'"
+		# Enable once the site is served over HTTPS:
+		# Strict-Transport-Security "max-age=31536000"
+		-Server
+	}
+
+	# HTML: always revalidate so deploys show up immediately.
+	@html path *.html /
+	header @html Cache-Control "no-cache"
+
+	# Static assets and PDFs: cache for a week (rename files when they change).
+	@assets path /css/* /img/* /files/*
+	header @assets Cache-Control "public, max-age=604800"
+
+	handle_errors {
+		respond "{err.status_code} {err.status_text}" {err.status_code}
+	}
+}
